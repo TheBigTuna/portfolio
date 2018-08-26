@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Navbar from '../Components/Navbar'
 import Header from '../Components/Header.js'
 import Projects from '../Components/Projects.js'
+import Footer from '../Components/Footer.js'
 
 class Layout extends Component {
   constructor () {
@@ -53,6 +54,7 @@ class Layout extends Component {
       <Navbar />
       <Header />
       <Projects />
+      <Footer />
       </div>
     )
   }

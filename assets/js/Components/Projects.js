@@ -18,31 +18,31 @@ export default class Projects extends React.Component{
         <div className="row no-gutters">
           <div className="col-lg-6">
             <a className="portfolio-item" href="http://octaviusmoore.com/project1/index.html" target="_blank">
-              <img className="img-fluid projectImg" src="../images/polar.png" height="300px" alt="" />
+              <img className="img-fluid projectImg" src="images/polar.png" height="300px" alt="" />
             </a>
           </div>
           <div className="col-lg-6">
-            <a className="portfolio-item" href="#">
-              <img className="img-fluid projectImg" src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/5/2017/12/20170301155447.jpg" height="300px" alt="" />
+            <a className="portfolio-item" href="http://sybeq.com/html/home.html" target="_blank">
+              <img className="img-fluid projectImg" src="images/SybeqSite.png" height="300px" alt="" />
             </a>
           </div>
           <div className="col-lg-6">
-            <a className="portfolio-item" href="#">
-              <img className="img-fluid projectImg" src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/5/2017/12/20170301155447.jpg" height="300px"  alt="" />
+            <a className="portfolio-item" href="http://octaviusmoore.com/project3/index.html" target="_blank">
+              <img className="img-fluid projectImg" src="images/Untitled.png" height="300px"  alt="" />
             </a>
           </div>
           <div className="col-lg-6">
-            <a className="portfolio-item" href="#">
-              <img className="img-fluid projectImg" src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/5/2017/12/20170301155447.jpg" height="300" alt="" />
+            <a className="portfolio-item" href="http://octaviusmoore.com/project4/index.html" target="_blank">
+              <img className="img-fluid projectImg" src="images/youtube.png" height="300px" alt="" />
             </a>
           </div>
             <div className="col-lg-6">
-            <a className="portfolio-item" href="#">
+            <a className="portfolio-item" href="#" target="_blank">
               <img className="img-fluid projectImg" src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/5/2017/12/20170301155447.jpg" height="300px" alt="" />
             </a>
           </div>
             <div className="col-lg-6">
-            <a className="portfolio-item" href="#">
+            <a className="portfolio-item" href="#" target="_blank">
               <img className="img-fluid projectImg" src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/5/2017/12/20170301155447.jpg" height="300px" alt="" />
             </a>
           </div>
