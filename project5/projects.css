@@ -1,0 +1,354 @@
+body {
+  /*background: url('#') no-repeat center center fixed;*/
+  background-color: #001D40;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+body {
+    font-size: 1vw;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+}
+
+.side-menu {
+    width: 19vw;
+    height: auto;
+    margin:6vw auto 0;
+    font-size: 1.7vw;
+    line-height: 4vw;
+    color: #fff;
+    font-weight:700;
+    text-transform:uppercase;
+    position:absolute;
+    top:0; 
+    bottom:0;
+    left: -14.5vw;
+    cursor: pointer;
+}
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li {
+    display:block;
+    background-color: #333;
+    height: 6vw;
+    padding: 1vw 1.5vw;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+    transition: transform .5s, background-color .5s, color .5s;
+}
+
+/*the colors of the different columns*/
+.side-menu ul li:nth-child(1) { background-color: #00aced;}
+.side-menu ul li:nth-child(2) { background-color: #3b5998;}
+.side-menu ul li:nth-child(3) { background-color: #00a300;}
+.side-menu ul li:nth-child(4) { background-color: #ffc40d;}
+.side-menu ul li:nth-child(5) { background-color: #cb2027;}
+.side-menu ul li:nth-child(6) { background-color: #402B27;}
+
+.side-menu ul li:hover {
+    background-color: #333; /*you can make different colors depending on the nth-child like above*/
+    -webkit-transform: translateX(14.5vw);
+    transform: translateX(14.5vw);/*equal to left in the .side-menu*/
+}
+.side-menu ul li a {
+    display:block;
+    color: #FFF;
+    text-decoration: none;
+}
+.side-menu ul li span {
+    display:block;
+    position: absolute;
+    font-size: 2vw;
+    line-height: 4vw;
+    height:2vw;
+    top:0; 
+    bottom:0;
+    margin:0 auto;
+    padding:1vw 1.5vw;
+    right: 0.1vw;
+    color: #F8F6FF;
+}
+
+
+h2{
+    color: #fff;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    font-size: 3vw;
+    border-bottom: 2px solid #fff;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+
+}
+
+.projects{
+    padding: 10px 120px;
+    margin: 5px;
+    
+}
+
+.projects .img{
+    width: 100%;
+}
+
+.projects .box{
+border: 2px solid #F8F6FF;
+background: #fff;
+width: 35vw;
+height: 20vw;
+margin: 2vw;
+display: inline-block;
+overflow: hidden;
+}
+
+
+.projects .box .hoverBox{
+    background: #494C4E;
+    height: 100%;
+    position: 100%;
+    position: relative;
+    left: 100%;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.projects .box .hoverBox h4{
+    color: #fff;
+    font-size: 1.3vw;
+    padding: 1vw;
+    width: 8.2vw;
+    border: .15vw solid #ffc40d;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    font-style: italic;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.projects .box i{
+    font-size: 1vw;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.projects .box:hover h4:hover i{
+     margin-left: .5vw;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+
+}
+
+
+.projects .box:hover .hoverBox{
+    opacity: 0.9;
+    left: 0;
+}
+
+
+
+.modal-container{
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.modal-container.active{
+    display: block;
+}
+
+
+.modal1{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    padding: 5px;
+    float: right;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+    z-index: 10;
+}
+
+
+.modal1 img{
+    width: 100%;
+}
+
+.modal1 .exit{
+    float: right;
+    font-size: 2vw;
+    padding-bottom: .5vw;
+    cursor: pointer; 
+}
+
+.modal1 .exit:hover{
+    color: red;
+}
+
+.modal1 a{
+    color: black;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.7vw;
+}
+
+.modal1 p{
+    color: black;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 1.7vw;
+}
+
+.modal1 h4{
+    color: #001D40;
+    font-weight: 700;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 2.3vw;
+}
+
+.modal1 a:hover{
+    color: red;
+}
+
+
+
+@media only screen and (max-width: 450px) {
+
+
+.side-menu {
+    width: 20vh;
+    height: auto;
+    margin: 6vh auto 0;
+    font-size: 1.7vh;
+    line-height: 2vh;
+    color: #fff;
+    font-weight:700;
+    text-transform:uppercase;
+    position:absolute;
+    top: 12%; 
+    bottom:0;
+    left: -14.5vh;
+    cursor: pointer;
+}
+
+
+.side-menu ul li:hover {
+    background-color: #333; /*you can make different colors depending on the nth-child like above*/
+    -webkit-transform: translateX(14.5vh);
+    transform: translateX(14.5vh);/*equal to left in the .side-menu*/
+}
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li {
+    display:block;
+    background-color: #333;
+    height: 6vh;
+    padding: 5.5vh 5.5vh;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+    transition: transform .5s, background-color .5s, color .5s;
+}
+
+.side-menu ul li span {
+    display:block;
+    position: absolute;
+    font-size: 7vw;
+    line-height: 17vw;
+    height: 2vw;
+    top:0; 
+    bottom:0;
+    margin:0 auto;
+    padding:1vw 1.5vw;
+    right: 0.1vw;
+    color: #F8F6FF;
+}
+
+
+.projects{
+    padding: 5px 80px;
+    margin-top: 5vw;
+    
+}
+
+.projects .box{
+border: 2px solid #F8F6FF;
+background: #fff;
+width: 55vw;
+height: 30vw;
+margin: 2vw;
+display: inline-block;
+overflow: hidden;
+}
+
+.modal1{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 5px;
+    float: right;
+    -webkit-animation-duration: .7s;
+    animation-duration: .7s;
+    z-index: 2;
+}
+
+.modal1 .exit{
+    float: right;
+    font-size: 15vw;
+    padding-bottom: .5vw;
+    cursor: pointer; 
+}
+
+.modal1 a{
+    color: black;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 6.7vw;
+}
+
+.modal1 p{
+    color: black;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 5.7vw;
+}
+
+.modal1 h4{
+    color: #001D40;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 5.7vw;
+    font-weight: 700;
+}
+
+.projects .box .hoverBox{
+    display: none;
+}
+}
+
+
+

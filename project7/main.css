@@ -1,0 +1,289 @@
+body{
+    background: #242426; /* Old browsers */
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.calculator-background{
+    position: absolute;
+    left: 35%;
+    top: 20%;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 35vw;
+    height: 30vw;
+    padding: 2vw;
+    -webkit-box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+    -moz-box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+    box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+}
+
+.display{
+    background-color: white;
+    width: 31vw;
+    height: 5vw;
+    border: 1px solid black;
+    padding: 25px;
+    color: black;
+    font-size: 2vw;
+    text-align: right;
+}
+
+
+.button-background{
+    background-color: lightslategray;
+    margin-top: 3vw;
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 69%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    -webkit-box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+    -moz-box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+    box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+}
+
+.button-symbols ul{
+    background-color: slateblue;
+    position: absolute;
+    left: 83.5%;
+    top: 0%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 0.9vw;
+    border: 0px solid black;
+    border-bottom-right-radius: 5%;
+
+}
+
+.button-symbols li{
+    list-style-type: none;
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+
+.divide:hover{
+    background-color: lightslategray;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.multiply:hover{
+    background-color: lightslategray;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.minus:hover{
+    background-color: lightslategray;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.plus:hover{
+    background-color: lightslategray;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.equals:hover{
+    background-color: lightslategray;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers ul{
+    width: 85%;
+    margin-top: -1vw;
+    margin-left: 1vw;
+    
+}
+
+.button-numbers li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    font-size: 2vw;
+    margin: .5vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    padding-left: 2vw;
+    padding-right: 1.8vw;
+}
+
+
+.button-numbers .nine:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .eight:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .seven:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .six:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .five:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .four:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .three:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .two:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .one:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .zero:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .decimal:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.button-numbers .clear:hover{
+    background-color: slateblue;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+.calculator-background{
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 65vw;
+    height: 60vw;
+    padding: 2vw;
+    -webkit-box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+    -moz-box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+    box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+}
+
+.display{
+    background-color: white;
+    width: 61vw;
+    height: 5vw;
+    border: 1px solid black;
+    padding: 25px;
+    color: black;
+    font-size: 6vw;
+    text-align: right;
+}
+
+.button-background{
+    background-color: lightslategray;
+    margin-top: 3vw;
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 69%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    -webkit-box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+    -moz-box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+    box-shadow: 7px 10px 5px 0px rgba(18,7,18,1);
+}
+
+.button-symbols ul{
+    background-color: slateblue;
+    position: absolute;
+    left: 84.5%;
+    top: 0%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    border: 0px solid black;
+    border-bottom-right-radius: 5%;
+
+}
+
+.button-symbols li{
+    list-style-type: none;
+    color: white;
+    font-size: 5.3vw;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.button-numbers ul{
+    width: 75%;
+    margin-top: -4vw;
+    margin-left: 1vw;
+    
+}
+
+
+.button-numbers li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    font-size: 5vw;
+    margin: .5vw;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    padding-left: 2vw;
+    padding-right: 1.8vw;
+}
+
+}
+
+
+
+

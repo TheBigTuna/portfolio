@@ -1,0 +1,263 @@
+/*side nav forked from https://codepen.io/deyand/pen/KpjqXK*/
+
+body {
+  /*background: url('#') no-repeat center center fixed;*/
+  background-color: #001D40;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+body {
+    font-size: 1vw;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    overflow: hidden;
+}
+.side-menu {
+    width: 19vw;
+    height: auto;
+    margin:6vw auto 0;
+    font-size: 1.7vw;
+    line-height: 4vw;
+    color: #fff;
+    font-weight:700;
+    text-transform:uppercase;
+    position:absolute;
+    top:0; 
+    bottom:0;
+    left: -14.5vw;
+    cursor: pointer;
+}
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li {
+    display:block;
+    background-color: #333;
+    height: 6vw;
+    padding: 1vw 1.5vw;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+    transition: transform .5s, background-color .5s, color .5s;
+}
+
+/*the colors of the different columns*/
+.side-menu ul li:nth-child(1) { background-color: #00aced;}
+.side-menu ul li:nth-child(2) { background-color: #3b5998;}
+.side-menu ul li:nth-child(3) { background-color: #00a300;}
+.side-menu ul li:nth-child(4) { background-color: #ffc40d;}
+.side-menu ul li:nth-child(5) { background-color: #cb2027;}
+.side-menu ul li:nth-child(6) { background-color: #402B27;}
+
+.side-menu ul li:hover {
+    background-color: #333; /*you can make different colors depending on the nth-child like above*/
+    -webkit-transform: translateX(14.5vw);
+    transform: translateX(14.5vw);/*equal to left in the .side-menu*/
+}
+.side-menu ul li a {
+    display:block;
+    color: #FFF;
+    text-decoration: none;
+}
+.side-menu ul li span {
+    display:block;
+    position: absolute;
+    font-size: 2vw;
+    line-height: 4vw;
+    height:2vw;
+    top:0; 
+    bottom:0;
+    margin:0 auto;
+    padding:1vw 1.5vw;
+    right: 0.1vw;
+    color: #F8F6FF;
+}
+
+h1{
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3vw;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    top: 20%;
+    left: 25%;
+    line-height: 4vw;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+h1:hover{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+h1::selection{
+    background-color: #ffc40d;
+}
+/*img{
+    width: 30vw;
+    height: 47.5vw;
+    position: absolute;
+    overflow: hidden;
+    left: 69vw;
+    margin-top: -1.4vw;   
+}*/
+
+.social-wrapper{
+    margin-left: 5.4vw;
+    margin-top: 2vw;
+}
+
+.circle{
+    color: white;
+    position: relative;
+    font-size: 3vw;
+    top: 20%;
+    left: 28%;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    margin-top: 10vw;
+    margin-left: 1.5vw;
+}
+
+.circle1:hover{
+    color: #00aced;
+    
+}
+
+.circle2:hover{
+    color: #3b5998;
+    
+}
+
+.circle3:hover{
+    color: #00a300;
+    
+}
+
+.circle4:hover{
+    color: #ffc40d;
+    
+}
+
+.circle5:hover{
+    color: #cb2027;
+    
+
+}
+.circle::selection{
+    color: #ffc40d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+.side-menu {
+    width: 20vh;
+    height: auto;
+    margin: 6vh auto 0;
+    font-size: 1.7vh;
+    line-height: 2vh;
+    color: #fff;
+    font-weight:700;
+    text-transform:uppercase;
+    position:absolute;
+    top: 12%; 
+    bottom:0;
+    left: -14.5vh;
+    cursor: pointer;
+    z-index: -1;
+}
+
+
+.side-menu ul li:hover {
+    background-color: #333; /*you can make different colors depending on the nth-child like above*/
+    -webkit-transform: translateX(14.5vh);
+    transform: translateX(14.5vh);/*equal to left in the .side-menu*/
+}
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li {
+    display:block;
+    background-color: #333;
+    height: 6vh;
+    padding: 5.5vh 5.5vh;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+    transition: transform .5s, background-color .5s, color .5s;
+}
+
+.side-menu ul li span {
+    display:block;
+    position: absolute;
+    font-size: 7vw;
+    line-height: 17vw;
+    height: 2vw;
+    top:0; 
+    bottom:0;
+    margin:0 auto;
+    padding:1vw 1.5vw;
+    right: 0.1vw;
+    color: #F8F6FF;
+}
+
+
+h1{
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 4.8vw;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    top: 25%;
+    left: 12%;
+    line-height: 9vw;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    z-index: -1;
+}
+
+.social-wrapper{
+    margin-left: -9vw;
+    margin-top: 23vw;
+}
+
+
+.circle{
+    color: white;
+    position: relative;
+    font-size: 8vw;
+    top: 30%;
+    left: 25%;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    margin-top: 10vw;
+    margin-left: 4.5vw;
+}
+}

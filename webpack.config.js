@@ -13,7 +13,7 @@ module.exports = {
     vendor: VENDOR_LIBS
   },
   output: { filename: '[name].js',
-            path: path.resolve(__dirname, 'public/output') },
+            path: path.resolve(__dirname, 'public/js/components') },
   module: {
     rules: [
       {

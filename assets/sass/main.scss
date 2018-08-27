@@ -271,6 +271,13 @@ h6 {
   font-size: 1.2rem;
 }
 
+.pName{
+  font-size: 1.4rem;
+}
+
+.pIcon{ 
+  font-size: 2.4rem;
+}
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: 530px;
@@ -379,7 +386,6 @@ a:hover, a:focus, a:active {
 .navbar-custom .navbar-brand {
   text-transform: uppercase;
   font-size: 1.1rem;
-  letter-spacing: 0.1rem;
   font-weight: 700;
   margin-top: .4rem;
 }
@@ -388,7 +394,6 @@ a:hover, a:focus, a:active {
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.1rem;
   margin-left: 1.5em;
   margin-top: 1em;
   color: white;
@@ -397,4 +402,8 @@ a:hover, a:focus, a:active {
 .nav-link:hover{
   text-decoration: underline;
   text-decoration-color: black;
+}
+
+.selfImg{
+  border-radius: 50px;
 }
