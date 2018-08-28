@@ -13,7 +13,7 @@ export default class Projects extends React.Component{
         <div>
       <div className="container">
         <div className="content-section-heading text-center">
-          <h2 className="mb-5 mt-3">Projects</h2>
+          <h2 className="mb-5 mt-3" id="projectsSec">Projects</h2>
         </div>
         <div className="row no-gutters">
           <div className="col-lg-6">
@@ -73,7 +73,7 @@ export default class Projects extends React.Component{
             </a>
              <span className="caption">
                 <span className="caption-content">
-                  <h2 className="pName mt-1">Youtube Player</h2>
+                  <h2 className="pName mt-1">Youtube-Web Application</h2>
                   <p className="mb-0">
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />

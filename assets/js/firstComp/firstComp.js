@@ -1,9 +1,11 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
+import Modal from 'react-modal';
 import Navbar from '../Components/Navbar'
 import Header from '../Components/Header.js'
 import Projects from '../Components/Projects.js'
 import Footer from '../Components/Footer.js'
+import ModalBox from '../Components/Modal.js'
 
 class Layout extends Component {
   constructor () {
@@ -17,7 +19,6 @@ class Layout extends Component {
     let posTop = window.scrollTo(0,0);
     document.addEventListener("scroll", () => {
     let navSec = document.getElementById('navSec');
-    let navMobile = document.getElementById('navMobile');
     let navText1 = document.getElementById('navText1');
     let pos = pageYOffset;
     let navList1 = document.getElementById('navList1');
@@ -37,7 +38,6 @@ class Layout extends Component {
      else{
       navSec.style.backgroundColor="white";
       navSec.style.borderBottom = ".5px solid rgba(0,0,0,0.6)";
-      navMobile.style.backgroundColor="#0575e6";
       navText1.style.color="black";
       navList1.style.color="black";
       navList2.style.color="black";
@@ -55,6 +55,7 @@ class Layout extends Component {
       <Header />
       <Projects />
       <Footer />
+      <ModalBox />
       </div>
     )
   }

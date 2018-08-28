@@ -113,7 +113,10 @@ h6 {
     height: 100vh;
   }
   .masthead h1 {
-    font-size: 4.5rem;
+    font-size: 2.4rem;
+  }
+   .masthead h3 {
+    font-size: 1.8rem;
   }
 }
 
@@ -279,6 +282,12 @@ h6 {
   font-size: 2.4rem;
 }
 @media (min-width: 992px) {
+  .contactBtn{
+    color: black;
+  }
+  .contactBtn:hover{
+    color: #0575e6;
+  }
   .portfolio-item {
     max-width: 530px;
     max-height: 200px;
@@ -404,6 +413,6 @@ a:hover, a:focus, a:active {
   text-decoration-color: black;
 }
 
-.selfImg{
-  border-radius: 50px;
+
+#modalSec{
 }

@@ -14,9 +14,6 @@ export default class Navbar extends React.Component{
    <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navSec">
       <div className="container">
         <p className="navbar-brand"id="navText1">Octavius</p>
-        <button className="navbar-toggler" id="navMobile" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto" >
             <li className="nav-item">
@@ -26,7 +23,7 @@ export default class Navbar extends React.Component{
             <a className="nav-link" id="navList2" href="#aboutSec">About</a>
             </li>
              <li className="nav-item">
-              <a className="nav-link" id="navList3" href="#locationSec">Projects</a>
+              <a className="nav-link" id="navList3" href="projectsSec">Projects</a>
             </li>
             <li className="nav-item">
             <a className="nav-link" id="navList4" href="#contactSec">Contact</a>
