@@ -406,6 +406,7 @@ a:hover, a:focus, a:active {
   margin-left: 1.5em;
   margin-top: 1em;
   color: white;
+  cursor: pointer;
 }
 
 .nav-link:hover{
@@ -414,5 +415,10 @@ a:hover, a:focus, a:active {
 }
 
 
-#modalSec{
+.social{
+  color: black;
+}
+
+.social:hover{
+  color: #0575e6;
 }

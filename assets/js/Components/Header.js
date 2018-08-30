@@ -10,7 +10,7 @@ export default class Header extends React.Component{
     
     render(){
       return(
-        <div>
+        <div id="headSec">
         <header className="masthead d-flex">
       <div className="container text-left my-auto">
       <img className="img-fluid rounded-circle" src="images/self.png" width="80px" alt="" />
@@ -18,7 +18,7 @@ export default class Header extends React.Component{
         <h3 className="mb-3">
         Front End Web Developer
         </h3>
-        <a className="btn btn-light rounded btn-xl js-scroll-trigger contactBtn" href="#about">CONTACT</a>
+        {/*<a className="btn btn-light rounded btn-xl js-scroll-trigger contactBtn hidden-xs" href="#about">CONTACT</a>*/}
       </div>
       <div className="overlay"></div>
     </header>

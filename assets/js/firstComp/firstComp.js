@@ -1,6 +1,5 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
-import Modal from 'react-modal';
 import Navbar from '../Components/Navbar'
 import Header from '../Components/Header.js'
 import Projects from '../Components/Projects.js'
@@ -55,7 +54,6 @@ class Layout extends Component {
       <Header />
       <Projects />
       <Footer />
-      <ModalBox />
       </div>
     )
   }
