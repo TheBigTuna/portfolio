@@ -30,7 +30,7 @@ export default class Navbar extends React.Component{
     this.closeModal = this.closeModal.bind(this);
     }
     
-     openModal() {
+  openModal() {
     this.setState({modalIsOpen: true});
   }
  
@@ -56,19 +56,19 @@ export default class Navbar extends React.Component{
               <a className="nav-link" id="navList3" href="#projectsSec">Projects</a>
             </li>
             <li className="nav-item">
-            <a className="nav-link" id="navList2">About</a>
-            </li> 
-            <li className="nav-item">
             <a className="nav-link" id="navList4" onClick={this.openModal}>Contact</a>
             </li>
+            <li className="nav-item">
+            <a className="nav-link" id="navList2"></a>
+            </li> 
           </ul>
         <Modal
           isOpen={this.state.modalIsOpen}
           onAfterOpen={this.afterOpenModal}
           onRequestClose={this.closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
-        >
+          contentLabel="Example Modal">
+          
           <h2 className="mb-2">Contact</h2>
           <h6>Phone</h6>
           <p>(313)293-9440</p>

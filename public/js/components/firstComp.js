@@ -272,18 +272,14 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', id: 'navList2' },
-                    'About'
+                    { className: 'nav-link', id: 'navList4', onClick: this.openModal },
+                    'Contact'
                   )
                 ),
                 _react2.default.createElement(
                   'li',
                   { className: 'nav-item' },
-                  _react2.default.createElement(
-                    'a',
-                    { className: 'nav-link', id: 'navList4', onClick: this.openModal },
-                    'Contact'
-                  )
+                  _react2.default.createElement('a', { className: 'nav-link', id: 'navList2' })
                 )
               ),
               _react2.default.createElement(
@@ -293,8 +289,7 @@ var Navbar = function (_React$Component) {
                   onAfterOpen: this.afterOpenModal,
                   onRequestClose: this.closeModal,
                   style: customStyles,
-                  contentLabel: 'Example Modal'
-                },
+                  contentLabel: 'Example Modal' },
                 _react2.default.createElement(
                   'h2',
                   { className: 'mb-2' },
@@ -691,7 +686,7 @@ var Layout = function (_Component) {
       return _react2.default.createElement(
         'div',
         { onScroll: this.navScroll() },
-        _react2.default.createElement(_Navbar2.default, null),
+        _react2.default.createElement(_Navbar2.default, { name: this.state.name }),
         _react2.default.createElement(_Header2.default, null),
         _react2.default.createElement(_Projects2.default, null),
         _react2.default.createElement(_Footer2.default, null)

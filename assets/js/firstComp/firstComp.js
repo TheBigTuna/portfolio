@@ -10,7 +10,7 @@ class Layout extends Component {
   constructor () {
     super()
     this.state = {
-      name: 'Octavius'
+      name: 'Octavius',
     }
   }
 
@@ -50,7 +50,7 @@ class Layout extends Component {
   render () {
     return (
       <div onScroll={this.navScroll()}>
-      <Navbar />
+      <Navbar name={this.state.name} />
       <Header />
       <Projects />
       <Footer />

@@ -15,10 +15,8 @@ export default class Header extends React.Component{
       <div className="container text-left my-auto">
       <img className="img-fluid rounded-circle" src="images/self.png" width="80px" alt="" />
         <h1 className="mb-1">I'm Octavius</h1>
-        <h3 className="mb-3">
-        Front End Web Developer
-        </h3>
-        {/*<a className="btn btn-light rounded btn-xl js-scroll-trigger contactBtn hidden-xs" href="#about">CONTACT</a>*/}
+        <h3 className="mb-3">Front End Web Developer</h3>
+        {/*<button className="btn btn-light rounded btn-xl js-scroll-trigger contactBtn hidden-xs mt-3" href="#about">CONTACT</button>*/}
       </div>
       <div className="overlay"></div>
     </header>
