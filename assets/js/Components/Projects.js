@@ -13,7 +13,7 @@ export default class Projects extends React.Component{
         <div>
       <div className="container">
         <div className="content-section-heading text-center">
-          <h2 className="mb-5 mt-3" id="projectsSec">Projects</h2>
+          <h2 className="mb-5 mt-3" id="projectsSec">PROJECTS</h2>
         </div>
         <div className="row no-gutters">
           <div className="col-lg-6">

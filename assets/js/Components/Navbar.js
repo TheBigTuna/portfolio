@@ -6,6 +6,9 @@ import ModalBox from '../Components/Modal.js'
 
 
 let customStyles = {
+  overlay : {
+    backgroundColor       : 'none'
+  },
   content : {
     top                   : '50%',
     left                  : '50%',
@@ -46,6 +49,7 @@ export default class Navbar extends React.Component{
         <div>
    <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navSec">
       <div className="container">
+        <img className="img-fluid rounded-circle mr-2" src="images/self.png" id="navImg" width="30px" alt="" />
         <p className="navbar-brand"id="navText1">Octavius</p>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto" >
@@ -59,7 +63,7 @@ export default class Navbar extends React.Component{
             <a className="nav-link" id="navList4" onClick={this.openModal}>Contact</a>
             </li>
             <li className="nav-item">
-            <a className="nav-link" id="navList2"></a>
+            <a className="nav-link" id="navList2" href="#aboutSec"></a>
             </li> 
           </ul>
         <Modal

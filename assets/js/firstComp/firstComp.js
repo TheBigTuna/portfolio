@@ -2,6 +2,7 @@ import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
 import Navbar from '../Components/Navbar'
 import Header from '../Components/Header.js'
+import About from '../Components/About.js'
 import Projects from '../Components/Projects.js'
 import Footer from '../Components/Footer.js'
 import ModalBox from '../Components/Modal.js'
@@ -20,14 +21,15 @@ class Layout extends Component {
     let navSec = document.getElementById('navSec');
     let navText1 = document.getElementById('navText1');
     let pos = pageYOffset;
+    let navImg = document.getElementById('navImg');
     let navList1 = document.getElementById('navList1');
     let navList2 = document.getElementById('navList2');
     let navList3 = document.getElementById('navList3');
     let navList4 = document.getElementById('navList4');
-
-     if(pos < 100){
+     if(pos < 300){
       navSec.style.backgroundColor="#0575e6";
       navSec.style.borderBottom = "none";
+      navImg.style.display="none";
       navText1.style.color="white";
       navList1.style.color="white";
       navList2.style.color="white";
@@ -37,6 +39,7 @@ class Layout extends Component {
      else{
       navSec.style.backgroundColor="white";
       navSec.style.borderBottom = ".5px solid rgba(0,0,0,0.6)";
+      navImg.style.display="block";
       navText1.style.color="black";
       navList1.style.color="black";
       navList2.style.color="black";
@@ -51,7 +54,8 @@ class Layout extends Component {
     return (
       <div onScroll={this.navScroll()}>
       <Navbar name={this.state.name} />
-      <Header />
+      <Header /> 
+      <About />
       <Projects />
       <Footer />
       </div>
