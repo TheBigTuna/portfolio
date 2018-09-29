@@ -759,7 +759,16 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
+                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'https://github.com/TheBigTuna/restaurant-app', target: '_blank' },
+                      _react2.default.createElement(
+                        'button',
+                        { className: 'viewCode btn' },
+                        'View Code'
+                      )
+                    )
                   )
                 )
               )
@@ -790,7 +799,17 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' })
+                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'https://github.com/TheBigTuna/T7-frame-data', target: '_blank' },
+                      _react2.default.createElement(
+                        'button',
+                        { className: 'viewCode btn' },
+                        'View Code'
+                      )
+                    )
                   )
                 )
               )
@@ -852,7 +871,16 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
+                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'https://github.com/TheBigTuna/dylantribute', target: '_blank' },
+                      _react2.default.createElement(
+                        'button',
+                        { className: 'viewCode btn' },
+                        'View Code'
+                      )
+                    )
                   )
                 )
               )
@@ -883,7 +911,16 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
+                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'https://github.com/TheBigTuna/youtubeplayer', target: '_blank' },
+                      _react2.default.createElement(
+                        'button',
+                        { className: 'viewCode btn' },
+                        'View Code'
+                      )
+                    )
                   )
                 )
               )
@@ -893,8 +930,8 @@ var Projects = function (_React$Component) {
               { className: 'col-lg-6' },
               _react2.default.createElement(
                 'a',
-                { className: 'portfolio-item', href: 'http://octaviusmoore.com/project5/index.html', target: '_blank' },
-                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/oldPortfolio.png', height: '300px', alt: '' })
+                { className: 'portfolio-item', href: '#', target: '_blank' },
+                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/img2.jpg', height: '300px', alt: '' })
               ),
               _react2.default.createElement(
                 'span',
@@ -902,22 +939,8 @@ var Projects = function (_React$Component) {
                 _react2.default.createElement(
                   'span',
                   { className: 'caption-content' },
-                  _react2.default.createElement(
-                    'h2',
-                    { className: 'pName mt-1' },
-                    'Portfolio'
-                  ),
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'mb-0' },
-                    _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-php-plain colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-mysql-plain-wordmark pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
-                  )
+                  _react2.default.createElement('h2', { className: 'pName mt-1' }),
+                  _react2.default.createElement('p', { className: 'mb-0' })
                 )
               )
             )
