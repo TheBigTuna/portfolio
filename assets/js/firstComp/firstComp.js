@@ -1,17 +1,21 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
+import ReactLoading from 'react-loading';
 import Navbar from '../Components/Navbar'
 import Header from '../Components/Header.js'
 import About from '../Components/About.js'
 import Projects from '../Components/Projects.js'
 import Footer from '../Components/Footer.js'
 import ModalBox from '../Components/Modal.js'
+import Load from '../Components/Loading.js'
+
 
 class Layout extends Component {
   constructor () {
     super()
     this.state = {
       name: 'Octavius',
+      isLoading: true,
     }
   }
 
@@ -49,15 +53,33 @@ class Layout extends Component {
      }
     });
   }
-    
+
+    showPortfolio() {
+            window.addEventListener("load", function(event) {
+             let loadContainer = document.getElementsByClassName("loadContainer")[0];
+             let portfolioContainer = document.getElementsByClassName("portfolioContainer")[0];
+             loadContainer.classList.remove('block');
+             loadContainer.classList.add('none');
+             portfolioContainer.classList.remove('none');
+             portfolioContainer.classList.add('block');
+        });
+    };
   render () {
     return (
+      <div>
+      {this.showPortfolio()};
+      <div className="loadContainer block">
+      <Load  />
+      </div >
+      <div className="portfolioContainer none">
       <div onScroll={this.navScroll()}>
       <Navbar name={this.state.name} />
       <Header /> 
       <About />
       <Projects />
       <Footer />
+      </div>
+      </div>
       </div>
     )
   }
