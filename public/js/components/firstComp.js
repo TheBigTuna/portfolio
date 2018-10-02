@@ -1,1 +1,1177 @@
-webpackJsonp([0],{25:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function l(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0});var c=function(){function e(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,a,n){return a&&e(t.prototype,a),n&&e(t,n),t}}(),i=a(0),u=n(i),s=a(1),f=(n(s),function(e){function t(){l(this,t);var e=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this));return e.state={name:"Octavius"},e}return r(t,e),c(t,[{key:"render",value:function(){return u.default.createElement("div",{id:"aboutSec"},u.default.createElement("div",{className:"container text-center my-auto"}))}}]),t}(u.default.Component));t.default=f},26:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function l(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0});var c=function(){function e(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,a,n){return a&&e(t.prototype,a),n&&e(t,n),t}}(),i=a(0),u=n(i),s=a(1),f=(n(s),function(e){function t(){l(this,t);var e=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this));return e.state={name:"Octavius"},e}return r(t,e),c(t,[{key:"render",value:function(){return u.default.createElement("div",null,u.default.createElement("footer",{className:"py-5 mt-5",id:"footerSec"},u.default.createElement("div",{className:"container"},u.default.createElement("p",{className:"m-0 text-center text-white footerText"},"2018 @OctaviusMoore.com"))))}}]),t}(u.default.Component));t.default=f},27:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function l(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0});var c=function(){function e(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,a,n){return a&&e(t.prototype,a),n&&e(t,n),t}}(),i=a(0),u=n(i),s=a(1),f=(n(s),a(5)),m=n(f),d={overlay:{backgroundColor:"none"},content:{top:"50%",left:"50%",right:"auto",bottom:"auto",marginRight:"-50%",transform:"translate(-50%, -50%)"}};m.default.setAppElement("div");var p=function(e){function t(){l(this,t);var e=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this));return e.state={name:"Octavius"},e.openModal=e.openModal.bind(e),e.afterOpenModal=e.afterOpenModal.bind(e),e.closeModal=e.closeModal.bind(e),e}return r(t,e),c(t,[{key:"openModal",value:function(){this.setState({modalIsOpen:!0})}},{key:"afterOpenModal",value:function(){}},{key:"closeModal",value:function(){this.setState({modalIsOpen:!1})}},{key:"render",value:function(){return u.default.createElement("div",{id:"headSec"},u.default.createElement("header",{className:"masthead d-flex"},u.default.createElement("div",{className:"container text-left my-auto"},u.default.createElement("img",{className:"img-fluid rounded-circle",src:"images/self.png",width:"80px",alt:""}),u.default.createElement("h1",{className:"mb-1"},"I'm Octavius"),u.default.createElement("h3",{className:"mb-3"},"Front End Web Developer"),u.default.createElement("button",{className:"btn btn-light rounded btn-xl js-scroll-trigger contactBtn hidden-xs mt-3",onClick:this.openModal},"CONTACT")),u.default.createElement(m.default,{isOpen:this.state.modalIsOpen,onAfterOpen:this.afterOpenModal,onRequestClose:this.closeModal,style:d,contentLabel:"Example Modal"},u.default.createElement("h2",{className:"mb-2"},"Contact"),u.default.createElement("h6",null,"Phone"),u.default.createElement("p",null,"(313)293-9440"),u.default.createElement("h6",null,"Email"),u.default.createElement("p",null,"mooreoctavius94@gmail.com"),u.default.createElement("h6",null,"Social"),u.default.createElement("a",{href:"https://www.linkedin.com/in/octavius-moore-6a84a7b0/"},u.default.createElement("i",{className:"fa fa-linkedin social fa-lg"})),u.default.createElement("a",{href:"https://github.com/TheBigTuna"},u.default.createElement("i",{className:"fa fa-github ml-3 social fa-lg"})),u.default.createElement("a",{href:"https://www.freecodecamp.org/thebigtuna"},u.default.createElement("i",{className:"fa fa-free-code-camp ml-3 social fa-lg"})))))}}]),t}(u.default.Component);t.default=p},28:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function l(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0});var c=function(){function e(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,a,n){return a&&e(t.prototype,a),n&&e(t,n),t}}(),i=a(0),u=n(i),s=a(1),f=(n(s),a(8)),m=n(f),d=function(e){function t(e){e.type,e.color;l(this,t);var a=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this));return a.state={name:"Octavius"},a}return r(t,e),c(t,[{key:"render",value:function(){return u.default.createElement(m.default,{type:"bars",color:"#0575e6",height:"40%",width:"40%"})}}]),t}(u.default.Component);t.default=d},29:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function l(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0});var c=function(){function e(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,a,n){return a&&e(t.prototype,a),n&&e(t,n),t}}(),i=a(0),u=n(i),s=a(1),f=(n(s),a(5)),m=n(f),d=a(7),p=(n(d),{overlay:{backgroundColor:"none"},content:{top:"50%",left:"50%",right:"auto",bottom:"auto",marginRight:"-50%",transform:"translate(-50%, -50%)"}});m.default.setAppElement("div");var b=function(e){function t(){l(this,t);var e=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this));return e.state={name:"Octavius"},e.openModal=e.openModal.bind(e),e.afterOpenModal=e.afterOpenModal.bind(e),e.closeModal=e.closeModal.bind(e),e}return r(t,e),c(t,[{key:"openModal",value:function(){this.setState({modalIsOpen:!0})}},{key:"afterOpenModal",value:function(){}},{key:"closeModal",value:function(){this.setState({modalIsOpen:!1})}},{key:"render",value:function(){return u.default.createElement("div",null,u.default.createElement("nav",{className:"navbar navbar-expand-lg navbar-dark navbar-custom fixed-top",id:"navSec"},u.default.createElement("div",{className:"container"},u.default.createElement("img",{className:"img-fluid rounded-circle mr-2",src:"images/self.png",id:"navImg",width:"30px",alt:""}),u.default.createElement("p",{className:"navbar-brand",id:"navText1"},"Octavius"),u.default.createElement("div",{className:"collapse navbar-collapse",id:"navbarResponsive"},u.default.createElement("ul",{className:"navbar-nav ml-auto"},u.default.createElement("li",{className:"nav-item"},u.default.createElement("a",{className:"nav-link",id:"navList1",href:"#headSec"},"Home")),u.default.createElement("li",{className:"nav-item"},u.default.createElement("a",{className:"nav-link",id:"navList3",href:"#projectsSec"},"Projects")),u.default.createElement("li",{className:"nav-item"},u.default.createElement("a",{className:"nav-link",id:"navList4",onClick:this.openModal},"Contact")),u.default.createElement("li",{className:"nav-item"},u.default.createElement("a",{className:"nav-link",id:"navList2",href:"#aboutSec"}))),u.default.createElement(m.default,{isOpen:this.state.modalIsOpen,onAfterOpen:this.afterOpenModal,onRequestClose:this.closeModal,style:p,contentLabel:"Example Modal"},u.default.createElement("h2",{className:"mb-2"},"Contact"),u.default.createElement("h6",null,"Phone"),u.default.createElement("p",null,"(313)293-9440"),u.default.createElement("h6",null,"Email"),u.default.createElement("p",null,"mooreoctavius94@gmail.com"),u.default.createElement("h6",null,"Social"),u.default.createElement("a",{href:"https://www.linkedin.com/in/octavius-moore-6a84a7b0/"},u.default.createElement("i",{className:"fa fa-linkedin social fa-lg"})),u.default.createElement("a",{href:"https://github.com/TheBigTuna"},u.default.createElement("i",{className:"fa fa-github ml-3 social fa-lg"})),u.default.createElement("a",{href:"https://www.freecodecamp.org/thebigtuna"},u.default.createElement("i",{className:"fa fa-free-code-camp ml-3 social fa-lg"})))))))}}]),t}(u.default.Component);t.default=b},30:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function l(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0});var c=function(){function e(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,a,n){return a&&e(t.prototype,a),n&&e(t,n),t}}(),i=a(0),u=n(i),s=a(1),f=(n(s),function(e){function t(){l(this,t);var e=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this));return e.state={name:"Octavius"},e}return r(t,e),c(t,[{key:"render",value:function(){return u.default.createElement("div",null,u.default.createElement("div",{className:"container"},u.default.createElement("div",{className:"content-section-heading text-center"},u.default.createElement("h2",{className:"mb-5 mt-3",id:"projectsSec"},"PROJECTS")),u.default.createElement("div",{className:"row no-gutters"},u.default.createElement("div",{className:"col-lg-6"},u.default.createElement("a",{className:"portfolio-item",href:"http://octaviusmoore.com/project1/index.html",target:"_blank"},u.default.createElement("img",{className:"img-fluid projectImg",src:"images/polar.png",height:"300px",alt:""})),u.default.createElement("span",{className:"caption"},u.default.createElement("span",{className:"caption-content"},u.default.createElement("h2",{className:"pName mt-1"},"The Polar Bay"),u.default.createElement("p",{className:"mb-0"},u.default.createElement("i",{className:"devicon-html5-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-css3-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-bootstrap-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-react-original-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-git-plain-wordmark colored pIcon"}),u.default.createElement("a",{href:"https://github.com/TheBigTuna/restaurant-app",target:"_blank"},u.default.createElement("button",{className:"viewCode btn"},"View Code")))))),u.default.createElement("div",{className:"col-lg-6"},u.default.createElement("a",{className:"portfolio-item",href:"http://octaviusmoore.com/project2/index.html",target:"_blank"},u.default.createElement("img",{className:"img-fluid projectImg",src:"images/T7.png",height:"300px",alt:""})),u.default.createElement("span",{className:"caption"},u.default.createElement("span",{className:"caption-content"},u.default.createElement("h2",{className:"pName mt-1"},"Tekken 7 Frame Data App"),u.default.createElement("p",{className:"mb-0"},u.default.createElement("i",{className:"devicon-html5-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-css3-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-bootstrap-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-javascript-plain colored pIcon"}),u.default.createElement("i",{className:"devicon-jquery-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-git-plain-wordmark colored pIcon"}),u.default.createElement("a",{href:"https://github.com/TheBigTuna/T7-frame-data",target:"_blank"},u.default.createElement("button",{className:"viewCode btn"},"View Code")))))),u.default.createElement("div",{className:"col-lg-6"},u.default.createElement("a",{className:"portfolio-item",href:"http://sybeq.com/html/home.html",target:"_blank"},u.default.createElement("img",{className:"img-fluid projectImg",src:"images/SybeqSite.png",height:"300px",alt:""})),u.default.createElement("span",{className:"caption"},u.default.createElement("span",{className:"caption-content"},u.default.createElement("h2",{className:"pName mt-1"},"SYBEQ"),u.default.createElement("p",{className:"mb-0"},u.default.createElement("i",{className:"devicon-html5-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-css3-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-bootstrap-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-javascript-plain colored pIcon"}),u.default.createElement("i",{className:"devicon-jquery-plain-wordmark colored pIcon"}))))),u.default.createElement("div",{className:"col-lg-6"},u.default.createElement("a",{className:"portfolio-item",href:"http://octaviusmoore.com/project3/index.html",target:"_blank"},u.default.createElement("img",{className:"img-fluid projectImg",src:"images/Untitled.png",height:"300px",alt:""})),u.default.createElement("span",{className:"caption"},u.default.createElement("span",{className:"caption-content"},u.default.createElement("h2",{className:"pName mt-1"},"Dylan Webpage"),u.default.createElement("p",{className:"mb-0"},u.default.createElement("i",{className:"devicon-html5-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-css3-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-javascript-plain colored pIcon"}),u.default.createElement("i",{className:"devicon-jquery-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-git-plain-wordmark colored pIcon"}),u.default.createElement("a",{href:"https://github.com/TheBigTuna/dylantribute",target:"_blank"},u.default.createElement("button",{className:"viewCode btn"},"View Code")))))),u.default.createElement("div",{className:"col-lg-6"},u.default.createElement("a",{className:"portfolio-item",href:"http://octaviusmoore.com/project4/index.html",target:"_blank"},u.default.createElement("img",{className:"img-fluid projectImg",src:"images/youtube.png",height:"300px",alt:""})),u.default.createElement("span",{className:"caption"},u.default.createElement("span",{className:"caption-content"},u.default.createElement("h2",{className:"pName mt-1"},"Youtube-Web Application"),u.default.createElement("p",{className:"mb-0"},u.default.createElement("i",{className:"devicon-html5-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-css3-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-bootstrap-plain-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-react-original-wordmark colored pIcon"}),u.default.createElement("i",{className:"devicon-git-plain-wordmark colored pIcon"}),u.default.createElement("a",{href:"https://github.com/TheBigTuna/youtubeplayer",target:"_blank"},u.default.createElement("button",{className:"viewCode btn"},"View Code")))))),u.default.createElement("div",{className:"col-lg-6"},u.default.createElement("a",{className:"portfolio-item",href:"#",target:"_blank"},u.default.createElement("img",{className:"img-fluid projectImg",src:"images/img2.jpg",height:"300px",alt:""})),u.default.createElement("span",{className:"caption"},u.default.createElement("span",{className:"caption-content"},u.default.createElement("h2",{className:"pName mt-1"}),u.default.createElement("p",{className:"mb-0"})))))))}}]),t}(u.default.Component));t.default=f},32:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function l(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}var c=function(){function e(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,a,n){return a&&e(t.prototype,a),n&&e(t,n),t}}(),i=a(0),u=n(i),s=a(1),f=n(s),m=a(8),d=(n(m),a(29)),p=n(d),b=a(27),h=n(b),E=a(25),v=n(E),y=a(30),g=n(y),w=a(26),N=n(w),O=a(7),_=(n(O),a(28)),k=n(_),j=function(e){function t(){l(this,t);var e=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this));return e.state={name:"Octavius",isLoading:!0},e}return r(t,e),c(t,[{key:"navScroll",value:function(){window.scrollTo(0,0);document.addEventListener("scroll",function(){var e=document.getElementById("navSec"),t=document.getElementById("navText1"),a=pageYOffset,n=document.getElementById("navImg"),l=document.getElementById("navList1"),o=document.getElementById("navList2"),r=document.getElementById("navList3"),c=document.getElementById("navList4");a<300?(e.style.backgroundColor="#0575e6",e.style.borderBottom="none",n.style.display="none",t.style.color="white",l.style.color="white",o.style.color="white",r.style.color="white",c.style.color="white"):(e.style.backgroundColor="white",e.style.borderBottom=".5px solid rgba(0,0,0,0.6)",n.style.display="block",t.style.color="black",l.style.color="black",o.style.color="black",r.style.color="black",c.style.color="black")})}},{key:"showPortfolio",value:function(){window.addEventListener("load",function(e){var t=document.getElementsByClassName("loadContainer")[0],a=document.getElementsByClassName("portfolioContainer")[0];t.classList.remove("block"),t.classList.add("none"),a.classList.remove("none"),a.classList.add("block")})}},{key:"render",value:function(){return u.default.createElement("div",null,this.showPortfolio(),";",u.default.createElement("div",{className:"loadContainer block"},u.default.createElement(k.default,null)),u.default.createElement("div",{className:"portfolioContainer none"},u.default.createElement("div",{onScroll:this.navScroll()},u.default.createElement(p.default,{name:this.state.name}),u.default.createElement(h.default,null),u.default.createElement(v.default,null),u.default.createElement(g.default,null),u.default.createElement(N.default,null))))}}]),t}(i.Component),M=document.getElementById("app");f.default.render(u.default.createElement(j,null),M)},7:function(e,t,a){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}function l(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0});var c=function(){function e(e,t){for(var a=0;a<t.length;a++){var n=t[a];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,a,n){return a&&e(t.prototype,a),n&&e(t,n),t}}(),i=a(0),u=n(i),s=a(1),f=(n(s),a(5)),m=n(f),d={content:{top:"50%",left:"50%",right:"auto",bottom:"auto",marginRight:"-50%",transform:"translate(-50%, -50%)"}};m.default.setAppElement("div");var p=function(e){function t(){l(this,t);var e=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this));return e.state={name:"Octavius",modalIsOpen:!1},e.openModal=e.openModal.bind(e),e.afterOpenModal=e.afterOpenModal.bind(e),e.closeModal=e.closeModal.bind(e),e}return r(t,e),c(t,[{key:"openModal",value:function(){this.setState({modalIsOpen:!0})}},{key:"afterOpenModal",value:function(){this.subtitle.style.color="#f00"}},{key:"closeModal",value:function(){this.setState({modalIsOpen:!1})}},{key:"render",value:function(){var e=this;return u.default.createElement("div",null,u.default.createElement("div",{id:"modalSec"},u.default.createElement("div",{className:"container"},u.default.createElement("button",{onClick:this.openModal},"Open Modal"),u.default.createElement(m.default,{isOpen:this.state.modalIsOpen,onAfterOpen:this.afterOpenModal,onRequestClose:this.closeModal,style:d,contentLabel:"Example Modal"},u.default.createElement("h2",{ref:function(t){return e.subtitle=t}},"Hello"),u.default.createElement("button",{onClick:this.closeModal},"close"),u.default.createElement("div",null,"I am a modal"),u.default.createElement("form",null,u.default.createElement("input",null),u.default.createElement("button",null,"tab navigation"),u.default.createElement("button",null,"stays"),u.default.createElement("button",null,"inside"),u.default.createElement("button",null,"the modal"))))))}}]),t}(u.default.Component);t.default=p}},[32]);
+webpackJsonp([0],{
+
+/***/ 14:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(2);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactModal = __webpack_require__(12);
+
+var _reactModal2 = _interopRequireDefault(_reactModal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
+  }
+};
+
+_reactModal2.default.setAppElement('div');
+
+var ModalBox = function (_React$Component) {
+  _inherits(ModalBox, _React$Component);
+
+  function ModalBox() {
+    _classCallCheck(this, ModalBox);
+
+    var _this = _possibleConstructorReturn(this, (ModalBox.__proto__ || Object.getPrototypeOf(ModalBox)).call(this));
+
+    _this.state = {
+      name: "Octavius",
+      modalIsOpen: false
+    };
+    _this.openModal = _this.openModal.bind(_this);
+    _this.afterOpenModal = _this.afterOpenModal.bind(_this);
+    _this.closeModal = _this.closeModal.bind(_this);
+    return _this;
+  }
+
+  _createClass(ModalBox, [{
+    key: 'openModal',
+    value: function openModal() {
+      this.setState({ modalIsOpen: true });
+    }
+  }, {
+    key: 'afterOpenModal',
+    value: function afterOpenModal() {
+      this.subtitle.style.color = '#f00';
+    }
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.setState({ modalIsOpen: false });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _this2 = this;
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { id: 'modalSec' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'button',
+              { onClick: this.openModal },
+              'Open Modal'
+            ),
+            _react2.default.createElement(
+              _reactModal2.default,
+              {
+                isOpen: this.state.modalIsOpen,
+                onAfterOpen: this.afterOpenModal,
+                onRequestClose: this.closeModal,
+                style: customStyles,
+                contentLabel: 'Example Modal'
+              },
+              _react2.default.createElement(
+                'h2',
+                { ref: function ref(subtitle) {
+                    return _this2.subtitle = subtitle;
+                  } },
+                'Hello'
+              ),
+              _react2.default.createElement(
+                'button',
+                { onClick: this.closeModal },
+                'close'
+              ),
+              _react2.default.createElement(
+                'div',
+                null,
+                'I am a modal'
+              ),
+              _react2.default.createElement(
+                'form',
+                null,
+                _react2.default.createElement('input', null),
+                _react2.default.createElement(
+                  'button',
+                  null,
+                  'tab navigation'
+                ),
+                _react2.default.createElement(
+                  'button',
+                  null,
+                  'stays'
+                ),
+                _react2.default.createElement(
+                  'button',
+                  null,
+                  'inside'
+                ),
+                _react2.default.createElement(
+                  'button',
+                  null,
+                  'the modal'
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return ModalBox;
+}(_react2.default.Component);
+
+exports.default = ModalBox;
+
+/***/ }),
+
+/***/ 33:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(2);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_React$Component) {
+  _inherits(About, _React$Component);
+
+  function About() {
+    _classCallCheck(this, About);
+
+    var _this = _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this));
+
+    _this.state = {
+      name: "Octavius"
+    };
+    return _this;
+  }
+
+  _createClass(About, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { id: 'aboutSec' },
+        _react2.default.createElement('div', { className: 'container text-center my-auto' })
+      );
+    }
+  }]);
+
+  return About;
+}(_react2.default.Component);
+
+exports.default = About;
+
+/***/ }),
+
+/***/ 34:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(2);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = function (_React$Component) {
+  _inherits(Footer, _React$Component);
+
+  function Footer() {
+    _classCallCheck(this, Footer);
+
+    var _this = _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).call(this));
+
+    _this.state = { name: "Octavius" };
+    return _this;
+  }
+
+  _createClass(Footer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'footer',
+          { className: 'py-5 mt-5', id: 'footerSec' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'p',
+              { className: 'm-0 text-center text-white footerText' },
+              '2018 @OctaviusMoore.com'
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Footer;
+}(_react2.default.Component);
+
+exports.default = Footer;
+
+/***/ }),
+
+/***/ 35:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(2);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactModal = __webpack_require__(12);
+
+var _reactModal2 = _interopRequireDefault(_reactModal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var customStyles = {
+  overlay: {
+    backgroundColor: 'none'
+  },
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
+  }
+};
+
+_reactModal2.default.setAppElement('div');
+
+var Header = function (_React$Component) {
+  _inherits(Header, _React$Component);
+
+  function Header() {
+    _classCallCheck(this, Header);
+
+    var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this));
+
+    _this.state = {
+      name: "Octavius"
+    };
+    _this.openModal = _this.openModal.bind(_this);
+    _this.afterOpenModal = _this.afterOpenModal.bind(_this);
+    _this.closeModal = _this.closeModal.bind(_this);
+    return _this;
+  }
+
+  _createClass(Header, [{
+    key: 'openModal',
+    value: function openModal() {
+      this.setState({ modalIsOpen: true });
+    }
+  }, {
+    key: 'afterOpenModal',
+    value: function afterOpenModal() {}
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.setState({ modalIsOpen: false });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { id: 'headSec' },
+        _react2.default.createElement(
+          'header',
+          { className: 'masthead d-flex' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container text-left my-auto' },
+            _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: 'images/self.png', width: '80px', alt: '' }),
+            _react2.default.createElement(
+              'h1',
+              { className: 'mb-1' },
+              'I\'m Octavius'
+            ),
+            _react2.default.createElement(
+              'h3',
+              { className: 'mb-3' },
+              'Front End Web Developer'
+            ),
+            _react2.default.createElement(
+              'button',
+              { className: 'btn btn-light rounded btn-xl js-scroll-trigger contactBtn hidden-xs mt-3', onClick: this.openModal },
+              'CONTACT'
+            )
+          ),
+          _react2.default.createElement(
+            _reactModal2.default,
+            {
+              isOpen: this.state.modalIsOpen,
+              onAfterOpen: this.afterOpenModal,
+              onRequestClose: this.closeModal,
+              style: customStyles,
+              contentLabel: 'Example Modal' },
+            _react2.default.createElement(
+              'h2',
+              { className: 'mb-2' },
+              'Contact'
+            ),
+            _react2.default.createElement(
+              'h6',
+              null,
+              'Phone'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              '(313)293-9440'
+            ),
+            _react2.default.createElement(
+              'h6',
+              null,
+              'Email'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'mooreoctavius94@gmail.com'
+            ),
+            _react2.default.createElement(
+              'h6',
+              null,
+              'Social'
+            ),
+            _react2.default.createElement(
+              'a',
+              { href: 'https://www.linkedin.com/in/octavius-moore-6a84a7b0/' },
+              _react2.default.createElement('i', { className: 'fa fa-linkedin social fa-lg' })
+            ),
+            _react2.default.createElement(
+              'a',
+              { href: 'https://github.com/TheBigTuna' },
+              _react2.default.createElement('i', { className: 'fa fa-github ml-3 social fa-lg' })
+            ),
+            _react2.default.createElement(
+              'a',
+              { href: 'https://www.freecodecamp.org/thebigtuna' },
+              _react2.default.createElement('i', { className: 'fa fa-free-code-camp ml-3 social fa-lg' })
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Header;
+}(_react2.default.Component);
+
+exports.default = Header;
+
+/***/ }),
+
+/***/ 36:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(2);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactLoading = __webpack_require__(15);
+
+var _reactLoading2 = _interopRequireDefault(_reactLoading);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Load = function (_React$Component) {
+  _inherits(Load, _React$Component);
+
+  function Load(_ref) {
+    var type = _ref.type,
+        color = _ref.color;
+
+    _classCallCheck(this, Load);
+
+    var _this = _possibleConstructorReturn(this, (Load.__proto__ || Object.getPrototypeOf(Load)).call(this));
+
+    _this.state = { name: "Octavius" };
+    return _this;
+  }
+
+  _createClass(Load, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(_reactLoading2.default, { type: 'bars', color: '#0575e6', height: '40%', width: '40%' });
+    }
+  }]);
+
+  return Load;
+}(_react2.default.Component);
+
+exports.default = Load;
+
+/***/ }),
+
+/***/ 37:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(2);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactModal = __webpack_require__(12);
+
+var _reactModal2 = _interopRequireDefault(_reactModal);
+
+var _Modal = __webpack_require__(14);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var customStyles = {
+  overlay: {
+    backgroundColor: 'none'
+  },
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)'
+  }
+};
+
+_reactModal2.default.setAppElement('div');
+
+var Navbar = function (_React$Component) {
+  _inherits(Navbar, _React$Component);
+
+  function Navbar() {
+    _classCallCheck(this, Navbar);
+
+    var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
+
+    _this.state = {
+      name: "Octavius"
+    };
+    _this.openModal = _this.openModal.bind(_this);
+    _this.afterOpenModal = _this.afterOpenModal.bind(_this);
+    _this.closeModal = _this.closeModal.bind(_this);
+    return _this;
+  }
+
+  _createClass(Navbar, [{
+    key: 'openModal',
+    value: function openModal() {
+      this.setState({ modalIsOpen: true });
+    }
+  }, {
+    key: 'afterOpenModal',
+    value: function afterOpenModal() {}
+  }, {
+    key: 'closeModal',
+    value: function closeModal() {
+      this.setState({ modalIsOpen: false });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'nav',
+          { className: 'navbar navbar-expand-lg navbar-dark navbar-custom fixed-top', id: 'navSec' },
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement('img', { className: 'img-fluid rounded-circle mr-2', src: 'images/self.png', id: 'navImg', width: '30px', alt: '' }),
+            _react2.default.createElement(
+              'p',
+              { className: 'navbar-brand', id: 'navText1' },
+              'Octavius'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'collapse navbar-collapse', id: 'navbarResponsive' },
+              _react2.default.createElement(
+                'ul',
+                { className: 'navbar-nav ml-auto' },
+                _react2.default.createElement(
+                  'li',
+                  { className: 'nav-item' },
+                  _react2.default.createElement(
+                    'a',
+                    { className: 'nav-link', id: 'navList1', href: '#headSec' },
+                    'Home'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'nav-item' },
+                  _react2.default.createElement(
+                    'a',
+                    { className: 'nav-link', id: 'navList3', href: '#projectsSec' },
+                    'Projects'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'nav-item' },
+                  _react2.default.createElement(
+                    'a',
+                    { className: 'nav-link', id: 'navList4', onClick: this.openModal },
+                    'Contact'
+                  )
+                ),
+                _react2.default.createElement(
+                  'li',
+                  { className: 'nav-item' },
+                  _react2.default.createElement('a', { className: 'nav-link', id: 'navList2', href: '#aboutSec' })
+                )
+              ),
+              _react2.default.createElement(
+                _reactModal2.default,
+                {
+                  isOpen: this.state.modalIsOpen,
+                  onAfterOpen: this.afterOpenModal,
+                  onRequestClose: this.closeModal,
+                  style: customStyles,
+                  contentLabel: 'Example Modal' },
+                _react2.default.createElement(
+                  'h2',
+                  { className: 'mb-2' },
+                  'Contact'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Phone'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  '(313)293-9440'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Email'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'mooreoctavius94@gmail.com'
+                ),
+                _react2.default.createElement(
+                  'h6',
+                  null,
+                  'Social'
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://www.linkedin.com/in/octavius-moore-6a84a7b0/' },
+                  _react2.default.createElement('i', { className: 'fa fa-linkedin social fa-lg' })
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://github.com/TheBigTuna' },
+                  _react2.default.createElement('i', { className: 'fa fa-github ml-3 social fa-lg' })
+                ),
+                _react2.default.createElement(
+                  'a',
+                  { href: 'https://www.freecodecamp.org/thebigtuna' },
+                  _react2.default.createElement('i', { className: 'fa fa-free-code-camp ml-3 social fa-lg' })
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Navbar;
+}(_react2.default.Component);
+
+exports.default = Navbar;
+
+/***/ }),
+
+/***/ 38:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(2);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Projects = function (_React$Component) {
+  _inherits(Projects, _React$Component);
+
+  function Projects() {
+    _classCallCheck(this, Projects);
+
+    var _this = _possibleConstructorReturn(this, (Projects.__proto__ || Object.getPrototypeOf(Projects)).call(this));
+
+    _this.state = { name: "Octavius" };
+    return _this;
+  }
+
+  _createClass(Projects, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'content-section-heading text-center' },
+            _react2.default.createElement(
+              'h2',
+              { className: 'mb-5 mt-3', id: 'projectsSec' },
+              'PROJECTS'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row no-gutters' },
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6' },
+              _react2.default.createElement(
+                'a',
+                { className: 'portfolio-item', href: 'http://octaviusmoore.com/project1/index.html', target: '_blank' },
+                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/polar.png', height: '300px', alt: '' })
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'caption' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'caption-content' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'pName mt-1' },
+                    'The Polar Bay'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'mb-0' },
+                    _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'https://github.com/TheBigTuna/restaurant-app', target: '_blank' },
+                      _react2.default.createElement(
+                        'button',
+                        { className: 'viewCode btn' },
+                        'View Code'
+                      )
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6' },
+              _react2.default.createElement(
+                'a',
+                { className: 'portfolio-item', href: 'http://octaviusmoore.com/project2/index.html', target: '_blank' },
+                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/T7.png', height: '300px', alt: '' })
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'caption' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'caption-content' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'pName mt-1' },
+                    'Tekken 7 Frame Data App'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'mb-0' },
+                    _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'https://github.com/TheBigTuna/T7-frame-data', target: '_blank' },
+                      _react2.default.createElement(
+                        'button',
+                        { className: 'viewCode btn' },
+                        'View Code'
+                      )
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6' },
+              _react2.default.createElement(
+                'a',
+                { className: 'portfolio-item', href: 'http://sybeq.com/html/home.html', target: '_blank' },
+                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/SybeqSite.png', height: '300px', alt: '' })
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'caption' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'caption-content' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'pName mt-1' },
+                    'SYBEQ'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'mb-0' },
+                    _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' })
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6' },
+              _react2.default.createElement(
+                'a',
+                { className: 'portfolio-item', href: 'http://octaviusmoore.com/project3/index.html', target: '_blank' },
+                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/Untitled.png', height: '300px', alt: '' })
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'caption' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'caption-content' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'pName mt-1' },
+                    'Dylan Webpage'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'mb-0' },
+                    _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'https://github.com/TheBigTuna/dylantribute', target: '_blank' },
+                      _react2.default.createElement(
+                        'button',
+                        { className: 'viewCode btn' },
+                        'View Code'
+                      )
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6' },
+              _react2.default.createElement(
+                'a',
+                { className: 'portfolio-item', href: 'http://octaviusmoore.com/project4/index.html', target: '_blank' },
+                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/youtube.png', height: '300px', alt: '' })
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'caption' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'caption-content' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'pName mt-1' },
+                    'Youtube-Web Application'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'mb-0' },
+                    _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement(
+                      'a',
+                      { href: 'https://github.com/TheBigTuna/youtubeplayer', target: '_blank' },
+                      _react2.default.createElement(
+                        'button',
+                        { className: 'viewCode btn' },
+                        'View Code'
+                      )
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6' },
+              _react2.default.createElement(
+                'a',
+                { className: 'portfolio-item', href: '#', target: '_blank' },
+                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/img2.jpg', height: '300px', alt: '' })
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'caption' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'caption-content' },
+                  _react2.default.createElement('h2', { className: 'pName mt-1' }),
+                  _react2.default.createElement('p', { className: 'mb-0' })
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Projects;
+}(_react2.default.Component);
+
+exports.default = Projects;
+
+/***/ }),
+
+/***/ 40:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(2);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+var _reactLoading = __webpack_require__(15);
+
+var _reactLoading2 = _interopRequireDefault(_reactLoading);
+
+var _Navbar = __webpack_require__(37);
+
+var _Navbar2 = _interopRequireDefault(_Navbar);
+
+var _Header = __webpack_require__(35);
+
+var _Header2 = _interopRequireDefault(_Header);
+
+var _About = __webpack_require__(33);
+
+var _About2 = _interopRequireDefault(_About);
+
+var _Projects = __webpack_require__(38);
+
+var _Projects2 = _interopRequireDefault(_Projects);
+
+var _Footer = __webpack_require__(34);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
+var _Modal = __webpack_require__(14);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+var _Loading = __webpack_require__(36);
+
+var _Loading2 = _interopRequireDefault(_Loading);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Layout = function (_Component) {
+  _inherits(Layout, _Component);
+
+  function Layout() {
+    _classCallCheck(this, Layout);
+
+    var _this = _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).call(this));
+
+    _this.state = {
+      name: 'Octavius',
+      isLoading: true
+    };
+    return _this;
+  }
+
+  _createClass(Layout, [{
+    key: 'navScroll',
+    value: function navScroll() {
+      var posTop = window.scrollTo(0, 0);
+      document.addEventListener("scroll", function () {
+        var navSec = document.getElementById('navSec');
+        var navText1 = document.getElementById('navText1');
+        var pos = pageYOffset;
+        var navImg = document.getElementById('navImg');
+        var navList1 = document.getElementById('navList1');
+        var navList2 = document.getElementById('navList2');
+        var navList3 = document.getElementById('navList3');
+        var navList4 = document.getElementById('navList4');
+        if (pos < 300) {
+          navSec.style.backgroundColor = "#0575e6";
+          navSec.style.borderBottom = "none";
+          navImg.style.display = "none";
+          navText1.style.color = "white";
+          navList1.style.color = "white";
+          navList2.style.color = "white";
+          navList3.style.color = "white";
+          navList4.style.color = "white";
+        } else {
+          navSec.style.backgroundColor = "white";
+          navSec.style.borderBottom = ".5px solid rgba(0,0,0,0.6)";
+          navImg.style.display = "block";
+          navText1.style.color = "black";
+          navList1.style.color = "black";
+          navList2.style.color = "black";
+          navList3.style.color = "black";
+          navList4.style.color = "black";
+        }
+      });
+    }
+  }, {
+    key: 'showPortfolio',
+    value: function showPortfolio() {
+      window.addEventListener("load", function (event) {
+        var loadContainer = document.getElementsByClassName("loadContainer")[0];
+        var portfolioContainer = document.getElementsByClassName("portfolioContainer")[0];
+        loadContainer.classList.remove('block');
+        loadContainer.classList.add('none');
+        portfolioContainer.classList.remove('none');
+        portfolioContainer.classList.add('block');
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        this.showPortfolio(),
+        ';',
+        _react2.default.createElement(
+          'div',
+          { className: 'loadContainer block' },
+          _react2.default.createElement(_Loading2.default, null)
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolioContainer none' },
+          _react2.default.createElement(
+            'div',
+            { onScroll: this.navScroll() },
+            _react2.default.createElement(_Navbar2.default, { name: this.state.name }),
+            _react2.default.createElement(_Header2.default, null),
+            _react2.default.createElement(_About2.default, null),
+            _react2.default.createElement(_Projects2.default, null),
+            _react2.default.createElement(_Footer2.default, null)
+          )
+        )
+      );
+    }
+  }]);
+
+  return Layout;
+}(_react.Component);
+
+var app = document.getElementById('app');
+
+_reactDom2.default.render(_react2.default.createElement(Layout, null), app);
+
+/***/ })
+
+},[40]);
