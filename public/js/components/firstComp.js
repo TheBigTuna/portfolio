@@ -515,7 +515,14 @@ var Load = function (_React$Component) {
   _createClass(Load, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_reactLoading2.default, { type: 'bars', color: '#0575e6', height: '40%', width: '40%' });
+      return _react2.default.createElement(
+        'div',
+        { className: 'loading-dots' },
+        _react2.default.createElement('div', { className: 'loading-dots--dot' }),
+        _react2.default.createElement('div', { className: 'loading-dots--dot' }),
+        _react2.default.createElement('div', { className: 'loading-dots--dot' }),
+        _react2.default.createElement('div', { className: 'loading-dots--dot' })
+      );
     }
   }]);
 
@@ -1141,8 +1148,6 @@ var Layout = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        this.showPortfolio(),
-        ';',
         _react2.default.createElement(
           'div',
           { className: 'loadContainer block' },
