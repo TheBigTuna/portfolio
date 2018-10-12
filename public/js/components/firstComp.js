@@ -1148,6 +1148,7 @@ var Layout = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
+        this.showPortfolio(),
         _react2.default.createElement(
           'div',
           { className: 'loadContainer block' },

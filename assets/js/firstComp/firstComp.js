@@ -67,6 +67,7 @@ class Layout extends Component {
   render () {
     return (
       <div>
+      {this.showPortfolio()}
       <div className="loadContainer block">
       <Load  />
       </div >
