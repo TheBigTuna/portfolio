@@ -22,7 +22,7 @@ export default class Projects extends React.Component{
             </a>
             <span className="caption">
                 <span className="caption-content">
-                  <h2 className="pName mt-1">The Polar Bay</h2>
+                  <h2 className="pName mt-1">The Polar Bay Website</h2>
                   <p className="mb-0">
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />
@@ -40,7 +40,7 @@ export default class Projects extends React.Component{
             </a>
              <span className="caption">
                 <span className="caption-content">
-                  <h2 className="pName mt-1">Tekken 7 Frame Data App</h2>
+                  <h2 className="pName mt-1">Tekken 7 Frame Data Appplication</h2>
                   <p className="mb-0">
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />
@@ -59,7 +59,7 @@ export default class Projects extends React.Component{
             </a>
             <span className="caption">
                 <span className="caption-content">
-                  <h2 className="pName mt-1">SYBEQ</h2>
+                  <h2 className="pName mt-1">SYBEQ Website</h2>
                   <p className="mb-0">
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />
@@ -76,7 +76,7 @@ export default class Projects extends React.Component{
             </a>
             <span className="caption">
                 <span className="caption-content">
-                  <h2 className="pName mt-1">Dylan Webpage</h2>
+                  <h2 className="pName mt-1">Dylan Tribute Webpage</h2>
                   <p className="mb-0">
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />
@@ -88,7 +88,7 @@ export default class Projects extends React.Component{
                 </span>
               </span>
           </div>
-          <div className="col-lg-6">
+           {/*<div className="col-lg-6">
             <a className="portfolio-item" href="http://octaviusmoore.com/project4/index.html" target="_blank">
               <img className="img-fluid projectImg" src="images/youtube.png" height="300px" alt="" />
             </a>
@@ -118,7 +118,7 @@ export default class Projects extends React.Component{
                 </span>
               </span>
           </div>
-             {/*<div className="col-lg-6">
+            <div className="col-lg-6">
             <a className="portfolio-item" href="#" target="_blank">
               <img className="img-fluid projectImg" src="https://cdn.uconnectlabs.com/wp-content/uploads/sites/5/2017/12/20170301155447.jpg" height="300px" alt="" />
             </a>
