@@ -111,7 +111,8 @@ h6 {
 .pIcon{ 
   font-size: 2.4rem;
 }
-@media (min-width: 992px) {
+// @media (min-width: 992px) {
+  @media (min-width: 673px) {
   .contactBtn{
     color: black;
   }
@@ -122,6 +123,8 @@ h6 {
     max-width: 530px;
     max-height: 200px;
     margin: 0;
+    padding: 0px;
+    background-color: black;
   }
   .portfolio-item .caption {
     -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
@@ -135,14 +138,53 @@ h6 {
     margin-bottom: 5rem;
   }
   .portfolio-item img {
-    -webkit-transition: -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
+    // -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    // -webkit-clip-path: inset(-.9px);
+    // clip-path: inset(-.9px);
+    margin: 0px;
+    padding: 0px;
+    min-width: 530px;
+    min-height: 200px;
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    // -webkit-clip-path: inset(2rem);
+    // clip-path: inset(2rem);
+    background-color: black;
+    -webkit-transition: opacity 0.4s;
+    opacity: 0.6;
   }
+  
+  .hoverBox h4{
+    position: absolute;
+    left: 200px;
+    top: 80px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 120px;
+    border: 2px solid #ffc40d;
+    border-radius: 10px;
+    font-style: italic;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    z-index: 10;
+    display: none;
+
+}
+
+.hoverBox i{
+    font-size: 18px;
+    margin-left: 2px;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.hoverBox:hover h4:hover i{
+     margin-left: 8px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+
+}
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
