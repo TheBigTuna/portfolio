@@ -151,9 +151,12 @@ h6 {
     // clip-path: inset(2rem);
     background-color: black;
     -webkit-transition: opacity 0.4s;
-    opacity: 0.6;
+    opacity: 0.2;
   }
-  
+  .hoverBox{
+    display: none;
+  }
+
   .hoverBox h4{
     position: absolute;
     left: 200px;
@@ -168,8 +171,6 @@ h6 {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     z-index: 10;
-    display: none;
-
 }
 
 .hoverBox i{

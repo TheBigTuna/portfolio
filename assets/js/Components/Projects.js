@@ -9,16 +9,40 @@ export default class Projects extends React.Component{
       super();
       this.state ={name: "Octavius"};
     }
+
     iconDisplay() { 
-      let hB = document.getElementsByClassName('hoverBox');  
-      let hB1, hB2, hB3, hB4 = [hB[0],hB[1],hB[2],hB[3]];
-       {/* hB.style.display = 'block';
-        hB.setAttribute("class", "Animated flipInX"); */}
+      let hB1 = document.getElementById('hoverBox1');  
+      let hB2 = document.getElementById('hoverBox2');  
+      let hB3 = document.getElementById('hoverBox3');  
+      let hB4 = document.getElementById('hoverBox4');  
+      let p1 = document.getElementById('p1');  
+      let p2 = document.getElementById('p2');  
+      let p3 = document.getElementById('p3');  
+      let p4 = document.getElementById('p4');  
+      let d1 = document.getElementById('display1');
+      let d2 = document.getElementById('display2');
+      let d3 = document.getElementById('display3');
+      let d4 = document.getElementById('display4');
+
+      p1.addEventListener('mouseover', () =>{hB1.style.display = 'block'; d1.setAttribute("class", "Animated flipInX");});
+      p2.addEventListener('mouseover', () =>{hB2.style.display = 'block'; d2.setAttribute("class", "Animated flipInX");});
+      p3.addEventListener('mouseover', () =>{hB3.style.display = 'block'; d3.setAttribute("class", "Animated flipInX");});
+      p4.addEventListener('mouseover', () =>{hB4.style.display = 'block'; d4.setAttribute("class", "Animated flipInX");});
+
     }
     iconHide() { 
-      let hB = document.getElementsByClassName('hoverBox')[0].lastChild;  
-        {/* hB.style.display = 'none';
-        hB.removeAttribute("class", "Animated flipInX");*/}
+      let hB1 = document.getElementById('hoverBox1');  
+      let hB2 = document.getElementById('hoverBox2');  
+      let hB3 = document.getElementById('hoverBox3');  
+      let hB4 = document.getElementById('hoverBox4');  
+      let p1 = document.getElementById('p1');  
+      let p2 = document.getElementById('p2');  
+      let p3 = document.getElementById('p3');  
+      let p4 = document.getElementById('p4');  
+          p1.addEventListener('mouseleave', () =>{hB1.style.display = 'none';});  
+          p2.addEventListener('mouseleave', () =>{hB2.style.display = 'none';});  
+          p3.addEventListener('mouseleave', () =>{hB3.style.display = 'none';});  
+          p4.addEventListener('mouseleave', () =>{hB4.style.display = 'none';});  
     }
     
     render(){
@@ -30,9 +54,9 @@ export default class Projects extends React.Component{
         </div>
         <div className="row no-gutters">
           <div className="col-lg-6">
-            <a className="portfolio-item" href="http://octaviusmoore.com/project1/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
-             <div className= "hoverBox">
-               <h4>Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+            <a className="portfolio-item" id="p1" href="http://octaviusmoore.com/project1/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
+             <div className= "hoverBox" id="hoverBox1">
+               <h4 id="display1">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
              <img className="img-fluid projectImg" src="images/polar.png" height="300px" alt="" />
             </a>
@@ -51,9 +75,9 @@ export default class Projects extends React.Component{
               </span>
           </div>
           <div className="col-lg-6">
-            <a className="portfolio-item" href="http://octaviusmoore.com/project2/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
-             <div className= "hoverBox">
-               <h4>Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+            <a className="portfolio-item"  id="p2" href="http://octaviusmoore.com/project2/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
+             <div className= "hoverBox" id="hoverBox2">
+               <h4 id="display2">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
               <img className="img-fluid projectImg" src="images/T7.png" height="300px" alt="" />
             </a>
@@ -73,9 +97,9 @@ export default class Projects extends React.Component{
               </span>
           </div>
           <div className="col-lg-6">
-            <a className="portfolio-item" href="http://sybeq.com/html/home.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
-             <div className= "hoverBox">
-               <h4>Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+            <a className="portfolio-item"  id="p3" href="http://sybeq.com/html/home.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
+             <div className= "hoverBox" id="hoverBox3">
+               <h4 id="display3">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
               <img className="img-fluid projectImg" src="images/SybeqSite.png" height="300px" alt="" />
             </a>
@@ -93,9 +117,9 @@ export default class Projects extends React.Component{
               </span>
           </div>
           <div className="col-lg-6">
-            <a className="portfolio-item" href="http://octaviusmoore.com/project3/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
-             <div className= "hoverBox">
-               <h4>Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+            <a className="portfolio-item"  id="p4" href="http://octaviusmoore.com/project3/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
+             <div className= "hoverBox" id="hoverBox4">
+               <h4 id="display4">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
               <img className="img-fluid projectImg" src="images/Untitled.png" height="300px"  alt="" />
             </a>

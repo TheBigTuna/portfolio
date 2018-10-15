@@ -785,20 +785,55 @@ var Projects = function (_React$Component) {
   _createClass(Projects, [{
     key: 'iconDisplay',
     value: function iconDisplay() {
-      var hB = document.getElementsByClassName('hoverBox');
-      var hB1 = void 0,
-          hB2 = void 0,
-          hB3 = void 0,
-          hB4 = [hB[0], hB[1], hB[2], hB[3]];
-      {/* hB.style.display = 'block';
-        hB.setAttribute("class", "Animated flipInX"); */}
+      var hB1 = document.getElementById('hoverBox1');
+      var hB2 = document.getElementById('hoverBox2');
+      var hB3 = document.getElementById('hoverBox3');
+      var hB4 = document.getElementById('hoverBox4');
+      var p1 = document.getElementById('p1');
+      var p2 = document.getElementById('p2');
+      var p3 = document.getElementById('p3');
+      var p4 = document.getElementById('p4');
+      var d1 = document.getElementById('display1');
+      var d2 = document.getElementById('display2');
+      var d3 = document.getElementById('display3');
+      var d4 = document.getElementById('display4');
+
+      p1.addEventListener('mouseover', function () {
+        hB1.style.display = 'block';d1.setAttribute("class", "Animated flipInX");
+      });
+      p2.addEventListener('mouseover', function () {
+        hB2.style.display = 'block';d2.setAttribute("class", "Animated flipInX");
+      });
+      p3.addEventListener('mouseover', function () {
+        hB3.style.display = 'block';d3.setAttribute("class", "Animated flipInX");
+      });
+      p4.addEventListener('mouseover', function () {
+        hB4.style.display = 'block';d4.setAttribute("class", "Animated flipInX");
+      });
     }
   }, {
     key: 'iconHide',
     value: function iconHide() {
-      var hB = document.getElementsByClassName('hoverBox')[0].lastChild;
-      {/* hB.style.display = 'none';
-        hB.removeAttribute("class", "Animated flipInX");*/}
+      var hB1 = document.getElementById('hoverBox1');
+      var hB2 = document.getElementById('hoverBox2');
+      var hB3 = document.getElementById('hoverBox3');
+      var hB4 = document.getElementById('hoverBox4');
+      var p1 = document.getElementById('p1');
+      var p2 = document.getElementById('p2');
+      var p3 = document.getElementById('p3');
+      var p4 = document.getElementById('p4');
+      p1.addEventListener('mouseleave', function () {
+        hB1.style.display = 'none';
+      });
+      p2.addEventListener('mouseleave', function () {
+        hB2.style.display = 'none';
+      });
+      p3.addEventListener('mouseleave', function () {
+        hB3.style.display = 'none';
+      });
+      p4.addEventListener('mouseleave', function () {
+        hB4.style.display = 'none';
+      });
     }
   }, {
     key: 'render',
@@ -826,13 +861,13 @@ var Projects = function (_React$Component) {
               { className: 'col-lg-6' },
               _react2.default.createElement(
                 'a',
-                { className: 'portfolio-item', href: 'http://octaviusmoore.com/project1/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
+                { className: 'portfolio-item', id: 'p1', href: 'http://octaviusmoore.com/project1/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
                 _react2.default.createElement(
                   'div',
-                  { className: 'hoverBox' },
+                  { className: 'hoverBox', id: 'hoverBox1' },
                   _react2.default.createElement(
                     'h4',
-                    null,
+                    { id: 'display1' },
                     'Display',
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
@@ -876,13 +911,13 @@ var Projects = function (_React$Component) {
               { className: 'col-lg-6' },
               _react2.default.createElement(
                 'a',
-                { className: 'portfolio-item', href: 'http://octaviusmoore.com/project2/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
+                { className: 'portfolio-item', id: 'p2', href: 'http://octaviusmoore.com/project2/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
                 _react2.default.createElement(
                   'div',
-                  { className: 'hoverBox' },
+                  { className: 'hoverBox', id: 'hoverBox2' },
                   _react2.default.createElement(
                     'h4',
-                    null,
+                    { id: 'display2' },
                     'Display',
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
@@ -927,13 +962,13 @@ var Projects = function (_React$Component) {
               { className: 'col-lg-6' },
               _react2.default.createElement(
                 'a',
-                { className: 'portfolio-item', href: 'http://sybeq.com/html/home.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
+                { className: 'portfolio-item', id: 'p3', href: 'http://sybeq.com/html/home.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
                 _react2.default.createElement(
                   'div',
-                  { className: 'hoverBox' },
+                  { className: 'hoverBox', id: 'hoverBox3' },
                   _react2.default.createElement(
                     'h4',
-                    null,
+                    { id: 'display3' },
                     'Display',
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
@@ -968,13 +1003,13 @@ var Projects = function (_React$Component) {
               { className: 'col-lg-6' },
               _react2.default.createElement(
                 'a',
-                { className: 'portfolio-item', href: 'http://octaviusmoore.com/project3/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
+                { className: 'portfolio-item', id: 'p4', href: 'http://octaviusmoore.com/project3/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
                 _react2.default.createElement(
                   'div',
-                  { className: 'hoverBox' },
+                  { className: 'hoverBox', id: 'hoverBox4' },
                   _react2.default.createElement(
                     'h4',
-                    null,
+                    { id: 'display4' },
                     'Display',
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
