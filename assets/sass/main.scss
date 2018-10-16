@@ -111,7 +111,31 @@ h6 {
 .pIcon{ 
   font-size: 2.4rem;
 }
+
 // @media (min-width: 992px) {
+    @media (max-width: 672px) {
+  .hoverBox{
+    display: none;
+  }
+
+  .hoverBox h4{
+    position: absolute;
+    left: 130px;
+    top: 60px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    width: 120px;
+    border: 2px solid #ffc40d;
+    border-radius: 10px;
+    font-style: italic;
+    -webkit-animation-duration: 2.3s;
+    animation-duration: 2.3s;
+    z-index: 10;
+    display: none;
+}
+    }
+
   @media (min-width: 673px) {
   .contactBtn{
     color: black;
@@ -159,7 +183,7 @@ h6 {
 
   .hoverBox h4{
     position: absolute;
-    left: 200px;
+    left: 210px;
     top: 80px;
     color: white;
     font-size: 20px;
@@ -168,8 +192,8 @@ h6 {
     border: 2px solid #ffc40d;
     border-radius: 10px;
     font-style: italic;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    -webkit-animation-duration: 2.3s;
+    animation-duration: 2.3s;
     z-index: 10;
 }
 
