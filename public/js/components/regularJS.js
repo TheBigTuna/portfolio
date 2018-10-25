@@ -1,1 +1,13 @@
-webpackJsonp([1],{42:function(o,c,e){"use strict";console.log("Welcome To The Rocky Stack")}},[42]);
+webpackJsonp([1],{
+
+/***/ 53:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+console.log('Welcome To The Rocky Stack');
+
+/***/ })
+
+},[53]);

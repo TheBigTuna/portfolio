@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 
 let customStyles = {
   overlay : {
-    backgroundColor       : 'none'
+    backgroundColor       : 'rgba(0,0,0,0.85)'
   },
   content : {
     top                   : '50%',
@@ -32,6 +32,7 @@ export default class Header extends React.Component{
 
     openModal() {
     this.setState({modalIsOpen: true});
+    document.getElementById("navSec").style.display = "none";
   }
  
   afterOpenModal() {
@@ -39,6 +40,8 @@ export default class Header extends React.Component{
  
   closeModal() {
     this.setState({modalIsOpen: false});
+    document.getElementById("navSec").style.display = "block";
+
   }
     
     render(){

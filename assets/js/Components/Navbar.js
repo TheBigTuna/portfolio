@@ -7,7 +7,7 @@ import ModalBox from '../Components/Modal.js'
 
 let customStyles = {
   overlay : {
-    backgroundColor       : 'none'
+    backgroundColor       : 'rgba(0,0,0,0.85)'
   },
   content : {
     top                   : '50%',
@@ -35,6 +35,7 @@ export default class Navbar extends React.Component{
     
   openModal() {
     this.setState({modalIsOpen: true});
+    document.getElementById("navSec").style.display = "none";
   }
  
   afterOpenModal() {
@@ -42,6 +43,7 @@ export default class Navbar extends React.Component{
  
   closeModal() {
     this.setState({modalIsOpen: false});
+    document.getElementById("navSec").style.display = "block";
   }
 
     render(){
@@ -60,11 +62,11 @@ export default class Navbar extends React.Component{
               <a className="nav-link" id="navList3" href="#projectsSec">Projects</a>
             </li>
             <li className="nav-item">
-            <a className="nav-link" id="navList4" onClick={this.openModal}>Contact</a>
-            </li>
-            <li className="nav-item">
-            <a className="nav-link" id="navList2" href="#aboutSec"></a>
+            <a className="nav-link" id="navList2" onClick={this.openModal}>About</a>
             </li> 
+            <li className="nav-item">
+            <a className="nav-link" id="navList4" onClick={this.openModal}></a>
+            </li>
           </ul>
         <Modal
           isOpen={this.state.modalIsOpen}
@@ -73,15 +75,23 @@ export default class Navbar extends React.Component{
           style={customStyles}
           contentLabel="Example Modal">
           
-          <h2 className="mb-2">Contact</h2>
-          <h6>Phone</h6>
-          <p>(313)293-9440</p>
-          <h6>Email</h6>
-          <p>mooreoctavius94@gmail.com</p>
-          <h6>Social</h6>
-           <a href ="https://www.linkedin.com/in/octavius-moore-6a84a7b0/"><i className="fa fa-linkedin social fa-lg"></i></a>
-           <a href ="https://github.com/TheBigTuna"><i className="fa fa-github ml-3 social fa-lg"></i></a>
-           <a href ="https://www.freecodecamp.org/thebigtuna"><i className="fa fa-free-code-camp ml-3 social fa-lg"></i></a>
+          <h2 className="mb-2">About Me</h2>
+          <p className="modalText">
+               Hello my name is Octavius Moore and I'm a web developer based out of Detroit MI.<br />
+           As a self-taught developer I welcome you to browse through my portfolio and freelance projects.<br />
+          I like to focus on client-side Front-end development for all devices using web technologies.<br />
+          I'm always looking to collaborate and join a great team using my skills as A Developer<br />
+          and, I am looking forward to working with you as well.</p>
+          <h5>My Skills</h5>
+                  <i className="devicon-html5-plain-wordmark colored pIcon" />
+                  <i className="devicon-css3-plain-wordmark colored pIcon" />
+                  <i className="devicon-bootstrap-plain-wordmark colored pIcon" />
+                  <i className="devicon-javascript-plain colored pIcon" />
+                  <i className="devicon-jquery-plain-wordmark colored pIcon" />
+                  <i className="devicon-react-original-wordmark colored pIcon" />
+                  <i className="devicon-git-plain-wordmark colored pIcon" />
+                  <i className="devicon-php-plain colored pIcon"/>
+                  <i className="devicon-wordpress-plain-wordmark colored pIcon" />
         </Modal>
         </div>
       </div>
