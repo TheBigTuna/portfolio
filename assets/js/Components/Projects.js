@@ -2,7 +2,7 @@ import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
 import {Animated} from "react-animated-css";
 
-
+let check = document.getElementById('hoverBox1');
 
 export default class Projects extends React.Component{
     constructor(){
@@ -13,6 +13,7 @@ export default class Projects extends React.Component{
     }
 
     iconDisplay() { 
+      console.log(check);
       let hB1 = document.getElementById('hoverBox1');  
       let hB2 = document.getElementById('hoverBox2');  
       let hB3 = document.getElementById('hoverBox3');  
@@ -40,6 +41,7 @@ export default class Projects extends React.Component{
       p6.addEventListener('mouseover', () =>{hB6.style.display = 'block'; d6.setAttribute("class", "Animated flipInX");});
 
     }
+
     iconHide() { 
       let hB1 = document.getElementById('hoverBox1');  
       let hB2 = document.getElementById('hoverBox2');  
@@ -157,7 +159,7 @@ export default class Projects extends React.Component{
             <div className="col-lg-6">
             <a className="portfolio-item" id="p5" href="http://octaviusmoore.com/project4/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
               <div className= "hoverBox" id="hoverBox5">
-               <h4 id="display4">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+               <h4 id="display5">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
               <img className="img-fluid projectImg" src="images/youtube.png" height="300px" alt="" />
             </a>
@@ -178,7 +180,7 @@ export default class Projects extends React.Component{
             <div className="col-lg-6">
             <a className="portfolio-item" id="p6" href="#" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
             <div className= "hoverBox" id="hoverBox6">
-               <h4 id="display4">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+               <h4 id="display6">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
               <img className="img-fluid projectImg" src="images/img2.jpg" height="300px" alt="" />
             </a>

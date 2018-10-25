@@ -77,11 +77,9 @@ export default class Navbar extends React.Component{
           
           <h2 className="mb-2">About Me</h2>
           <p className="modalText">
-               Hello my name is Octavius Moore and I'm a web developer based out of Detroit MI.<br />
-           As a self-taught developer I welcome you to browse through my portfolio and freelance projects.<br />
-          I like to focus on client-side Front-end development for all devices using web technologies.<br />
-          I'm always looking to collaborate and join a great team using my skills as A Developer<br />
-          and, I am looking forward to working with you as well.</p>
+               Hello my name is Octavius Moore and, I'm a web developer based out of Detroit MI.<br />
+               As a self-taught developer I welcome you to browse through my portfolio and freelance projects.<br />
+               I'm always looking to collaborate and join a great team and grow as a developer.<br /></p>
           <h5>My Skills</h5>
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />

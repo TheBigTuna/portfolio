@@ -692,15 +692,12 @@ var Navbar = function (_React$Component) {
                 _react2.default.createElement(
                   'p',
                   { className: 'modalText' },
-                  'Hello my name is Octavius Moore and I\'m a web developer based out of Detroit MI.',
+                  'Hello my name is Octavius Moore and, I\'m a web developer based out of Detroit MI.',
                   _react2.default.createElement('br', null),
                   'As a self-taught developer I welcome you to browse through my portfolio and freelance projects.',
                   _react2.default.createElement('br', null),
-                  'I like to focus on client-side Front-end development for all devices using web technologies.',
-                  _react2.default.createElement('br', null),
-                  'I\'m always looking to collaborate and join a great team using my skills as A Developer',
-                  _react2.default.createElement('br', null),
-                  'and, I am looking forward to working with you as well.'
+                  'I\'m always looking to collaborate and join a great team and grow as a developer.',
+                  _react2.default.createElement('br', null)
                 ),
                 _react2.default.createElement(
                   'h5',
@@ -761,6 +758,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var check = document.getElementById('hoverBox1');
+
 var Projects = function (_React$Component) {
   _inherits(Projects, _React$Component);
 
@@ -778,6 +777,7 @@ var Projects = function (_React$Component) {
   _createClass(Projects, [{
     key: 'iconDisplay',
     value: function iconDisplay() {
+      console.log(check);
       var hB1 = document.getElementById('hoverBox1');
       var hB2 = document.getElementById('hoverBox2');
       var hB3 = document.getElementById('hoverBox3');
@@ -1074,7 +1074,7 @@ var Projects = function (_React$Component) {
                   { className: 'hoverBox', id: 'hoverBox5' },
                   _react2.default.createElement(
                     'h4',
-                    { id: 'display4' },
+                    { id: 'display5' },
                     'Display',
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
@@ -1124,7 +1124,7 @@ var Projects = function (_React$Component) {
                   { className: 'hoverBox', id: 'hoverBox6' },
                   _react2.default.createElement(
                     'h4',
-                    { id: 'display4' },
+                    { id: 'display6' },
                     'Display',
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )

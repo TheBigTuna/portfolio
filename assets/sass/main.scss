@@ -70,6 +70,7 @@ h6 {
     font-size: 1.8rem;
   }
 }
+
 .portfolio-item {
   display: block;
   position: relative;
@@ -109,7 +110,8 @@ h6 {
 
 .pIcon{ 
   font-size: 2.4rem;
-}
+  margin-left:5px;
+  }
 
 // @media (min-width: 992px) {
     @media (max-width: 672px) {
@@ -412,4 +414,12 @@ a:hover, a:focus, a:active {
 
 .modalText{
     font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .hoverBox h4{
+    position: absolute;
+    left: 190px;
+    top: 80px;
+}
 }
