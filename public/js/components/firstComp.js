@@ -590,10 +590,10 @@ _reactModal2.default.setAppElement('div');
 var Navbar = function (_React$Component) {
   _inherits(Navbar, _React$Component);
 
-  function Navbar() {
+  function Navbar(props) {
     _classCallCheck(this, Navbar);
 
-    var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this));
+    var _this = _possibleConstructorReturn(this, (Navbar.__proto__ || Object.getPrototypeOf(Navbar)).call(this, props));
 
     _this.state = {
       name: "Octavius"
@@ -648,7 +648,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', id: 'navList1', href: '#headSec' },
+                    { className: 'nav-link', id: 'navList1', onClick: this.props.homeScroll },
                     'Home'
                   )
                 ),
@@ -657,7 +657,7 @@ var Navbar = function (_React$Component) {
                   { className: 'nav-item' },
                   _react2.default.createElement(
                     'a',
-                    { className: 'nav-link', id: 'navList3', href: '#projectsSec' },
+                    { className: 'nav-link', id: 'navList3', onClick: this.props.projectScroll },
                     'Projects'
                   )
                 ),
@@ -696,7 +696,7 @@ var Navbar = function (_React$Component) {
                   _react2.default.createElement('br', null),
                   'As a self-taught developer I welcome you to browse through my portfolio and freelance projects.',
                   _react2.default.createElement('br', null),
-                  'I\'m always looking to collaborate and join a great team and grow as a developer.',
+                  'I\'m always looking to collaborate and join a great team so please feel free to contact me.',
                   _react2.default.createElement('br', null)
                 ),
                 _react2.default.createElement(
@@ -758,8 +758,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var check = document.getElementById('hoverBox1');
-
 var Projects = function (_React$Component) {
   _inherits(Projects, _React$Component);
 
@@ -777,7 +775,6 @@ var Projects = function (_React$Component) {
   _createClass(Projects, [{
     key: 'iconDisplay',
     value: function iconDisplay() {
-      console.log(check);
       var hB1 = document.getElementById('hoverBox1');
       var hB2 = document.getElementById('hoverBox2');
       var hB3 = document.getElementById('hoverBox3');
@@ -1261,6 +1258,22 @@ var Layout = function (_Component) {
       });
     }
   }, {
+    key: 'homeScroll',
+    value: function homeScroll() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  }, {
+    key: 'projectScroll',
+    value: function projectScroll() {
+      window.scrollTo({
+        top: 585,
+        behavior: "smooth"
+      });
+    }
+  }, {
     key: 'showPortfolio',
     value: function showPortfolio() {
       window.addEventListener("load", function (event) {
@@ -1290,7 +1303,9 @@ var Layout = function (_Component) {
           _react2.default.createElement(
             'div',
             { onScroll: this.navScroll() },
-            _react2.default.createElement(_Navbar2.default, { name: this.state.name }),
+            _react2.default.createElement(_Navbar2.default, {
+              homeScroll: this.homeScroll,
+              projectScroll: this.projectScroll }),
             _react2.default.createElement(_Header2.default, null),
             _react2.default.createElement(_About2.default, null),
             _react2.default.createElement(_Projects2.default, null),

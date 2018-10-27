@@ -23,8 +23,8 @@ let customStyles = {
 
 
 export default class Navbar extends React.Component{
-    constructor(){
-      super();
+    constructor(props){
+      super(props);
       this.state ={
         name: "Octavius"
       };
@@ -56,10 +56,10 @@ export default class Navbar extends React.Component{
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto" >
             <li className="nav-item">
-              <a className="nav-link"  id="navList1"href="#headSec">Home</a>
+              <a className="nav-link"  id="navList1" onClick={this.props.homeScroll}>Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" id="navList3" href="#projectsSec">Projects</a>
+              <a className="nav-link" id="navList3" onClick={this.props.projectScroll}>Projects</a>
             </li>
             <li className="nav-item">
             <a className="nav-link" id="navList2" onClick={this.openModal}>About</a>
@@ -79,7 +79,7 @@ export default class Navbar extends React.Component{
           <p className="modalText">
                Hello my name is Octavius Moore and, I'm a web developer based out of Detroit MI.<br />
                As a self-taught developer I welcome you to browse through my portfolio and freelance projects.<br />
-               I'm always looking to collaborate and join a great team and grow as a developer.<br /></p>
+               I'm always looking to collaborate and join a great team so please feel free to contact me.<br /></p>
           <h5>My Skills</h5>
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />

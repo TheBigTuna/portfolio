@@ -53,6 +53,19 @@ class Layout extends Component {
      }
     });
   }
+  homeScroll() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+  projectScroll() {
+   window.scrollTo({
+     top: 585,
+     behavior: "smooth"
+   });
+  }
 
     showPortfolio() {
             window.addEventListener("load", function(event) {
@@ -73,7 +86,9 @@ class Layout extends Component {
       </div >
       <div className="portfolioContainer none">
       <div onScroll={this.navScroll()}>
-      <Navbar name={this.state.name} />
+      <Navbar
+       homeScroll={this.homeScroll} 
+       projectScroll={this.projectScroll} />
       <Header /> 
       <About />
       <Projects />

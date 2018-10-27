@@ -2,7 +2,7 @@ import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
 import {Animated} from "react-animated-css";
 
-let check = document.getElementById('hoverBox1');
+
 
 export default class Projects extends React.Component{
     constructor(){
@@ -13,7 +13,6 @@ export default class Projects extends React.Component{
     }
 
     iconDisplay() { 
-      console.log(check);
       let hB1 = document.getElementById('hoverBox1');  
       let hB2 = document.getElementById('hoverBox2');  
       let hB3 = document.getElementById('hoverBox3');  
@@ -41,7 +40,6 @@ export default class Projects extends React.Component{
       p6.addEventListener('mouseover', () =>{hB6.style.display = 'block'; d6.setAttribute("class", "Animated flipInX");});
 
     }
-
     iconHide() { 
       let hB1 = document.getElementById('hoverBox1');  
       let hB2 = document.getElementById('hoverBox2');  
