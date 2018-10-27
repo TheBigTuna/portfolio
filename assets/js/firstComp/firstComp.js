@@ -30,7 +30,7 @@ class Layout extends Component {
     let navList2 = document.getElementById('navList2');
     let navList3 = document.getElementById('navList3');
     let navList4 = document.getElementById('navList4');
-     if(pos < 300){
+     if(pos < 220){
       navSec.style.backgroundColor="#0575e6";
       navSec.style.borderBottom = "none";
       navImg.style.display="none";
@@ -39,6 +39,7 @@ class Layout extends Component {
       navList2.style.color="white";
       navList3.style.color="white";
       navList4.style.color="white";
+      navSec.style.boxShadow="none";
      }
      else{
       navSec.style.backgroundColor="white";
@@ -49,6 +50,7 @@ class Layout extends Component {
       navList2.style.color="black";
       navList3.style.color="black";
       navList4.style.color="black";
+      navSec.style.boxShadow=" 0 3px 2px -2px gray";
 
      }
     });
