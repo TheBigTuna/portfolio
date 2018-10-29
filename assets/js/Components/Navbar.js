@@ -89,6 +89,7 @@ export default class Navbar extends React.Component{
                   <i className="devicon-react-original-wordmark colored pIcon" />
                   <i className="devicon-git-plain-wordmark colored pIcon" />
                   <i className="devicon-php-plain colored pIcon"/>
+                  <i class="devicon-mysql-plain-wordmark pIcon"></i>
                   <i className="devicon-wordpress-plain-wordmark colored pIcon" />
         </Modal>
         </div>
