@@ -177,7 +177,30 @@ export default class Projects extends React.Component{
                 </span>
               </span>
           </div>
-            <div className="col-lg-6">
+          <div className="col-lg-6">
+            <a className="portfolio-item" id="p5" href="https://alleuro.com" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
+              <div className= "hoverBox" id="hoverBox5">
+               <h4 id="display5">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+             </div>
+              <img className="img-fluid projectImg" src="images/AllEuro.png" alt="images/youtube.png" height="300px" alt="" />
+            </a>
+             <span className="caption">
+                <span className="caption-content">
+                  <h2 className="pName mt-1">All European Website</h2>
+                  <p className="mb-0">
+                  <i className="devicon-html5-plain-wordmark colored pIcon" />
+                  <i className="devicon-css3-plain-wordmark colored pIcon" />
+                  <i className="devicon-bootstrap-plain-wordmark colored pIcon" />
+                  <i className="devicon-jquery-plain-wordmark colored pIcon" />
+                  <i className="devicon-php-plain colored pIcon"/>
+                  <i className="devicon-mysql-plain-wordmark pIcon" />
+                  <i className="devicon-git-plain-wordmark colored pIcon" />
+                  {/*<a href="https://github.com/TheBigTuna/youtubeplayer" target="_blank"><button className="viewCode btn">View Code</button></a>*/}
+                  </p>
+                </span>
+              </span>
+          </div>
+            {/* <div className="col-lg-6">
             <a className="portfolio-item" id="p5" href="http://octaviusmoore.com/project4/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
               <div className= "hoverBox" id="hoverBox5">
                <h4 id="display5">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
@@ -192,12 +215,12 @@ export default class Projects extends React.Component{
                   <i className="devicon-css3-plain-wordmark colored pIcon" />
                   <i className="devicon-bootstrap-plain-wordmark colored pIcon" />
                   <i className="devicon-react-original-wordmark colored pIcon" />
-                  <i className="devicon-git-plain-wordmark colored pIcon" />
+                  <i className="devicon-git-plain-wordmark colored pIcon" /> */}
                   {/*<a href="https://github.com/TheBigTuna/youtubeplayer" target="_blank"><button className="viewCode btn">View Code</button></a>*/}
-                  </p>
+                  {/* </p>
                 </span>
               </span>
-          </div>
+          </div> */}
           
            {/*<div className="col-lg-6">
             <a className="portfolio-item" href="#" target="_blank">
