@@ -49,9 +49,9 @@ export default class Header extends React.Component{
         <div id="headSec">
         <header className="masthead d-flex">
       <div className="container text-left my-auto">
-      <img className="img-fluid rounded-circle" src="images/self.png" width="80px" alt="" />
-        <h1 className="mb-1">I'm Octavius</h1>
-        <h3 className="mb-3">Front End Web Developer</h3>
+      <img className="img-fluid rounded-circle" src="images/self-min.png" alt="images/self.png" width="80px" alt="" />
+        <h2 className="mb-1">I'm Octavius</h2>
+        <h1 className="mb-3">Web Developer</h1>
         <button className="btn btn-light rounded btn-xl js-scroll-trigger contactBtn hidden-xs mt-3" onClick={this.openModal}>CONTACT</button>
       </div>
       <Modal

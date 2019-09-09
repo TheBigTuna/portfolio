@@ -1,6 +1,6 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
-import ReactLoading from 'react-loading';
+import ReactLoading from 'react-loading'
 import Navbar from '../Components/Navbar'
 import Header from '../Components/Header.js'
 import About from '../Components/About.js'
@@ -8,6 +8,8 @@ import Projects from '../Components/Projects.js'
 import Footer from '../Components/Footer.js'
 import ModalBox from '../Components/Modal.js'
 import Load from '../Components/Loading.js'
+
+
 
 
 class Layout extends Component {

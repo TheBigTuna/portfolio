@@ -51,7 +51,7 @@ export default class Navbar extends React.Component{
         <div>
    <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navSec">
       <div className="container">
-        <img className="img-fluid rounded-circle mr-2" src="images/self.png" id="navImg" width="30px" alt="" />
+        <img className="img-fluid rounded-circle mr-2" src="images/self-min.png" alt="images/self.png" id="navImg" width="30px" alt="" />
         <p className="navbar-brand"id="navText1">Octavius</p>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto" >
@@ -89,7 +89,7 @@ export default class Navbar extends React.Component{
                   <i className="devicon-react-original-wordmark colored pIcon" />
                   <i className="devicon-git-plain-wordmark colored pIcon" />
                   <i className="devicon-php-plain colored pIcon"/>
-                  <i class="devicon-mysql-plain-wordmark pIcon"></i>
+                  <i className="devicon-mysql-plain-wordmark pIcon" />
                   <i className="devicon-wordpress-plain-wordmark colored pIcon" />
         </Modal>
         </div>

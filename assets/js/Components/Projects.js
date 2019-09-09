@@ -9,7 +9,7 @@ export default class Projects extends React.Component{
       super();
       this.state ={name: "Octavius"};
       this.iconDisplay = this.iconDisplay.bind(this);
-      this.iconDisplay = this.iconDisplay.bind(this);
+      this.iconHide = this.iconHide.bind(this);
     }
 
     iconDisplay() { 
@@ -70,11 +70,11 @@ export default class Projects extends React.Component{
         </div>
         <div className="row no-gutters">
         <div className="col-lg-6">
-            <a className="portfolio-item" id="p1" href="http://octaviusmoore.com/project1/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
+            <a className="portfolio-item" id="p1" href="https://octaviusmoore.com/project1/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
              <div className= "hoverBox" id="hoverBox1">
                <h4 id="display1">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
-             <img className="img-fluid projectImg" src="images/polar.png" height="300px" alt="" />
+             <img className="img-fluid projectImg" src="images/polar-min.png" alt="images/polar.png" height="300px" alt="" />
             </a>
             <span className="caption">
                 <span className="caption-content">
@@ -91,11 +91,11 @@ export default class Projects extends React.Component{
               </span>
           </div>
          <div className="col-lg-6">
-            <a className="portfolio-item"  id="p2" href="http://octaviusmoore.com/project2/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
+            <a className="portfolio-item"  id="p2" href="https://octaviusmoore.com/project8/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
              <div className= "hoverBox" id="hoverBox2">
                <h4 id="display2">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
-              <img className="img-fluid projectImg" src="images/T7.png" height="300px" alt="" />
+              <img className="img-fluid projectImg" src="images/T7-min.png" alt="images/T7.png" height="300px" alt="" />
             </a>
              <span className="caption">
                 <span className="caption-content">
@@ -104,8 +104,7 @@ export default class Projects extends React.Component{
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />
                   <i className="devicon-bootstrap-plain-wordmark colored pIcon" />
-                  <i className="devicon-javascript-plain colored pIcon" />
-                  <i className="devicon-jquery-plain-wordmark colored pIcon" />
+                  <i className="devicon-react-original-wordmark colored pIcon" />
                   <i className="devicon-git-plain-wordmark colored pIcon" />
                   {/*<a href="https://github.com/TheBigTuna/T7-frame-data" target="_blank"><button className="viewCode btn">View Code</button></a>*/}
                   </p>
@@ -117,7 +116,7 @@ export default class Projects extends React.Component{
             <div className= "hoverBox" id="hoverBox6">
                <h4 id="display6">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
-              <img className="img-fluid projectImg" src="images/Det.png" height="300px" alt="" />
+              <img className="img-fluid projectImg" src="images/Det-min.png" alt="images/Det.png" height="300px" alt="" />
             </a>
             <span className="caption">
                 <span className="caption-content">
@@ -125,11 +124,10 @@ export default class Projects extends React.Component{
                   <p className="mb-0">
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />
-                  <i className="devicon-bootstrap-plain-wordmark colored pIcon" />
                   <i className="devicon-javascript-plain colored pIcon" />
                   <i className="devicon-jquery-plain-wordmark colored pIcon" />
                   <i className="devicon-php-plain colored pIcon"/>
-                  <i class="devicon-mysql-plain-wordmark pIcon" />
+                  <i className="devicon-mysql-plain-wordmark pIcon" />
                   <i className="devicon-git-plain-wordmark colored pIcon" />
                   </p>
                 </span>
@@ -141,7 +139,7 @@ export default class Projects extends React.Component{
              <div className= "hoverBox" id="hoverBox3">
                <h4 id="display3">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
-              <img className="img-fluid projectImg" src="images/SybeqSite.png" height="300px" alt="" />
+              <img className="img-fluid projectImg" src="images/SybeqSite-min.png" alt="images/SybeqSite.png" height="300px" alt="" />
             </a>
             <span className="caption">
                 <span className="caption-content">
@@ -156,12 +154,12 @@ export default class Projects extends React.Component{
                 </span>
               </span>
           </div>
-          <div className="col-lg-6">
+         {/* <div className="col-lg-6">
             <a className="portfolio-item"  id="p4" href="http://octaviusmoore.com/project3/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
              <div className= "hoverBox" id="hoverBox4">
                <h4 id="display4">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
-              <img className="img-fluid projectImg" src="images/Untitled.png" height="300px"  alt="" />
+              <img className="img-fluid projectImg" src="images/Untitled-min.png" alt="images/Untitled.png" height="300px"  alt="" />
             </a>
             <span className="caption">
                 <span className="caption-content">
@@ -172,6 +170,23 @@ export default class Projects extends React.Component{
                   <i className="devicon-javascript-plain colored pIcon" />
                   <i className="devicon-jquery-plain-wordmark colored pIcon" />
                   <i className="devicon-git-plain-wordmark colored pIcon" />
+                  <a href="https://github.com/TheBigTuna/dylantribute" target="_blank"><button className="viewCode btn">View Code</button></a>
+                  </p>
+                </span>
+              </span>
+          </div> */}
+          <div className="col-lg-6">
+            <a className="portfolio-item"  id="p4" href="https://octaviusmoore.com/SkateKicks/" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
+             <div className= "hoverBox" id="hoverBox4">
+               <h4 id="display4">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+             </div>
+              <img className="img-fluid projectImg" src="images/skatekicks-min.png" alt="images/skatekicks.png" height="300px"  alt="" />
+            </a>
+            <span className="caption">
+                <span className="caption-content">
+                  <h2 className="pName mt-1">Skatekicks Website</h2>
+                  <p className="mb-0">
+                  <i className="devicon-wordpress-plain-wordmark colored pIcon" />
                   {/*<a href="https://github.com/TheBigTuna/dylantribute" target="_blank"><button className="viewCode btn">View Code</button></a>*/}
                   </p>
                 </span>
@@ -205,7 +220,7 @@ export default class Projects extends React.Component{
               <div className= "hoverBox" id="hoverBox5">
                <h4 id="display5">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
              </div>
-              <img className="img-fluid projectImg" src="images/youtube.png" height="300px" alt="" />
+              <img className="img-fluid projectImg" src="images/youtube-min.png" alt="images/youtube.png" height="300px" alt="" />
             </a>
              <span className="caption">
                 <span className="caption-content">

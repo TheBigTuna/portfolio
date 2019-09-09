@@ -318,6 +318,8 @@ var _reactModal2 = _interopRequireDefault(_reactModal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -384,16 +386,16 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'container text-left my-auto' },
-            _react2.default.createElement('img', { className: 'img-fluid rounded-circle', src: 'images/self.png', width: '80px', alt: '' }),
+            _react2.default.createElement('img', _defineProperty({ className: 'img-fluid rounded-circle', src: 'images/self-min.png', alt: 'images/self.png', width: '80px' }, 'alt', '')),
             _react2.default.createElement(
-              'h1',
+              'h2',
               { className: 'mb-1' },
               'I\'m Octavius'
             ),
             _react2.default.createElement(
-              'h3',
+              'h1',
               { className: 'mb-3' },
-              'Front End Web Developer'
+              'Web Developer'
             ),
             _react2.default.createElement(
               'button',
@@ -565,6 +567,8 @@ var _Modal2 = _interopRequireDefault(_Modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -631,7 +635,7 @@ var Navbar = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'container' },
-            _react2.default.createElement('img', { className: 'img-fluid rounded-circle mr-2', src: 'images/self.png', id: 'navImg', width: '30px', alt: '' }),
+            _react2.default.createElement('img', _defineProperty({ className: 'img-fluid rounded-circle mr-2', src: 'images/self-min.png', alt: 'images/self.png', id: 'navImg', width: '30px' }, 'alt', '')),
             _react2.default.createElement(
               'p',
               { className: 'navbar-brand', id: 'navText1' },
@@ -712,7 +716,7 @@ var Navbar = function (_React$Component) {
                 _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
                 _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' }),
                 _react2.default.createElement('i', { className: 'devicon-php-plain colored pIcon' }),
-                _react2.default.createElement('i', { 'class': 'devicon-mysql-plain-wordmark pIcon' }),
+                _react2.default.createElement('i', { className: 'devicon-mysql-plain-wordmark pIcon' }),
                 _react2.default.createElement('i', { className: 'devicon-wordpress-plain-wordmark colored pIcon' })
               )
             )
@@ -771,7 +775,7 @@ var Projects = function (_React$Component) {
 
     _this.state = { name: "Octavius" };
     _this.iconDisplay = _this.iconDisplay.bind(_this);
-    _this.iconDisplay = _this.iconDisplay.bind(_this);
+    _this.iconHide = _this.iconHide.bind(_this);
     return _this;
   }
 
@@ -876,7 +880,7 @@ var Projects = function (_React$Component) {
               { className: 'col-lg-6' },
               _react2.default.createElement(
                 'a',
-                { className: 'portfolio-item', id: 'p1', href: 'http://octaviusmoore.com/project1/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
+                { className: 'portfolio-item', id: 'p1', href: 'https://octaviusmoore.com/project1/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
                 _react2.default.createElement(
                   'div',
                   { className: 'hoverBox', id: 'hoverBox1' },
@@ -887,7 +891,7 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
                 ),
-                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/polar.png', height: '300px', alt: '' })
+                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/polar-min.png', alt: 'images/polar.png', height: '300px' }, 'alt', ''))
               ),
               _react2.default.createElement(
                 'span',
@@ -917,7 +921,7 @@ var Projects = function (_React$Component) {
               { className: 'col-lg-6' },
               _react2.default.createElement(
                 'a',
-                { className: 'portfolio-item', id: 'p2', href: 'http://octaviusmoore.com/project2/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
+                { className: 'portfolio-item', id: 'p2', href: 'https://octaviusmoore.com/project8/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
                 _react2.default.createElement(
                   'div',
                   { className: 'hoverBox', id: 'hoverBox2' },
@@ -928,7 +932,7 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
                 ),
-                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/T7.png', height: '300px', alt: '' })
+                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/T7-min.png', alt: 'images/T7.png', height: '300px' }, 'alt', ''))
               ),
               _react2.default.createElement(
                 'span',
@@ -947,8 +951,7 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
                   )
                 )
@@ -970,7 +973,7 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
                 ),
-                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/Det.png', height: '300px', alt: '' })
+                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/Det-min.png', alt: 'images/Det.png', height: '300px' }, 'alt', ''))
               ),
               _react2.default.createElement(
                 'span',
@@ -988,11 +991,10 @@ var Projects = function (_React$Component) {
                     { className: 'mb-0' },
                     _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-php-plain colored pIcon' }),
-                    _react2.default.createElement('i', { 'class': 'devicon-mysql-plain-wordmark pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-mysql-plain-wordmark pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
                   )
                 )
@@ -1014,7 +1016,7 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
                 ),
-                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/SybeqSite.png', height: '300px', alt: '' })
+                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/SybeqSite-min.png', alt: 'images/SybeqSite.png', height: '300px' }, 'alt', ''))
               ),
               _react2.default.createElement(
                 'span',
@@ -1044,7 +1046,7 @@ var Projects = function (_React$Component) {
               { className: 'col-lg-6' },
               _react2.default.createElement(
                 'a',
-                { className: 'portfolio-item', id: 'p4', href: 'http://octaviusmoore.com/project3/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
+                { className: 'portfolio-item', id: 'p4', href: 'https://octaviusmoore.com/SkateKicks/', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
                 _react2.default.createElement(
                   'div',
                   { className: 'hoverBox', id: 'hoverBox4' },
@@ -1055,7 +1057,7 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
                 ),
-                _react2.default.createElement('img', { className: 'img-fluid projectImg', src: 'images/Untitled.png', height: '300px', alt: '' })
+                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/skatekicks-min.png', alt: 'images/skatekicks.png', height: '300px' }, 'alt', ''))
               ),
               _react2.default.createElement(
                 'span',
@@ -1066,16 +1068,12 @@ var Projects = function (_React$Component) {
                   _react2.default.createElement(
                     'h2',
                     { className: 'pName mt-1' },
-                    'Dylan Tribute Webpage'
+                    'Skatekicks Website'
                   ),
                   _react2.default.createElement(
                     'p',
                     { className: 'mb-0' },
-                    _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
+                    _react2.default.createElement('i', { className: 'devicon-wordpress-plain-wordmark colored pIcon' })
                   )
                 )
               )
