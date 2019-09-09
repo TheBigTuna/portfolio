@@ -277,7 +277,7 @@ var Footer = function (_React$Component) {
             _react2.default.createElement(
               'p',
               { className: 'm-0 text-center text-white footerText' },
-              '2018 @OctaviusMoore.com'
+              '2018 @octaviusmoore.com'
             )
           )
         )
@@ -324,7 +324,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // This is the header component for the portfolio
 
 var customStyles = {
   overlay: {
@@ -353,11 +353,15 @@ var Header = function (_React$Component) {
     _this.state = {
       name: "Octavius"
     };
+    // Toggles A react js modal
     _this.openModal = _this.openModal.bind(_this);
     _this.afterOpenModal = _this.afterOpenModal.bind(_this);
     _this.closeModal = _this.closeModal.bind(_this);
     return _this;
   }
+
+  // Sets state after opening the modal
+
 
   _createClass(Header, [{
     key: 'openModal',
@@ -368,6 +372,9 @@ var Header = function (_React$Component) {
   }, {
     key: 'afterOpenModal',
     value: function afterOpenModal() {}
+
+    // Sets state after closing the modal
+
   }, {
     key: 'closeModal',
     value: function closeModal() {
@@ -386,16 +393,16 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'container text-left my-auto' },
-            _react2.default.createElement('img', _defineProperty({ className: 'img-fluid rounded-circle', src: 'images/self-min.png', alt: 'images/self.png', width: '80px' }, 'alt', '')),
+            _react2.default.createElement('img', _defineProperty({ className: 'img-fluid selfImg', src: 'images/IMG_0978-min.jpg', alt: 'images/self.png', width: '80px' }, 'alt', '')),
             _react2.default.createElement(
               'h2',
               { className: 'mb-1' },
-              'I\'m Octavius'
+              'Hello I\'m Octavius'
             ),
             _react2.default.createElement(
               'h1',
               { className: 'mb-3' },
-              'Web Developer'
+              'A Web Developer'
             ),
             _react2.default.createElement(
               'button',
@@ -410,10 +417,10 @@ var Header = function (_React$Component) {
               onAfterOpen: this.afterOpenModal,
               onRequestClose: this.closeModal,
               style: customStyles,
-              contentLabel: 'Example Modal' },
+              contentLabel: 'Contact Modal' },
             _react2.default.createElement(
               'h2',
-              { className: 'mb-2' },
+              { className: 'mb-2 text-center' },
               'Contact'
             ),
             _react2.default.createElement(
@@ -435,26 +442,6 @@ var Header = function (_React$Component) {
               'p',
               null,
               'mooreoctavius94@gmail.com'
-            ),
-            _react2.default.createElement(
-              'h6',
-              null,
-              'Social'
-            ),
-            _react2.default.createElement(
-              'a',
-              { href: 'https://www.linkedin.com/in/octavius-moore-6a84a7b0/' },
-              _react2.default.createElement('i', { className: 'fa fa-linkedin social fa-lg' })
-            ),
-            _react2.default.createElement(
-              'a',
-              { href: 'https://github.com/TheBigTuna' },
-              _react2.default.createElement('i', { className: 'fa fa-github ml-3 social fa-lg' })
-            ),
-            _react2.default.createElement(
-              'a',
-              { href: 'https://www.freecodecamp.org/thebigtuna' },
-              _react2.default.createElement('i', { className: 'fa fa-free-code-camp ml-3 social fa-lg' })
             )
           )
         )
@@ -635,7 +622,7 @@ var Navbar = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'container' },
-            _react2.default.createElement('img', _defineProperty({ className: 'img-fluid rounded-circle mr-2', src: 'images/self-min.png', alt: 'images/self.png', id: 'navImg', width: '30px' }, 'alt', '')),
+            _react2.default.createElement('img', _defineProperty({ className: 'img-fluid selfImg mr-2', src: 'images/IMG_0978-min.jpg', alt: 'images/self.png', id: 'navImg', width: '30px' }, 'alt', '')),
             _react2.default.createElement(
               'p',
               { className: 'navbar-brand', id: 'navText1' },
@@ -694,14 +681,18 @@ var Navbar = function (_React$Component) {
                   'About Me'
                 ),
                 _react2.default.createElement(
-                  'p',
+                  'div',
                   { className: 'modalText' },
-                  'Hello my name is Octavius Moore and, I\'m a web developer based out of Detroit MI.',
-                  _react2.default.createElement('br', null),
-                  'As a self-taught developer I welcome you to browse through my portfolio and freelance projects.',
-                  _react2.default.createElement('br', null),
-                  'I\'m always looking to collaborate and join a great team so please feel free to contact me.',
-                  _react2.default.createElement('br', null)
+                  _react2.default.createElement(
+                    'p',
+                    null,
+                    'Hello my name is Octavius Moore and, I\'m a web developer based out of Detroit MI.',
+                    _react2.default.createElement('br', null),
+                    'As a self-taught developer I welcome you to browse through my portfolio and freelance projects.',
+                    _react2.default.createElement('br', null),
+                    'I\'m always looking to collaborate and join a great team so please feel free to contact me.',
+                    _react2.default.createElement('br', null)
+                  )
                 ),
                 _react2.default.createElement(
                   'h5',
@@ -785,13 +776,13 @@ var Projects = function (_React$Component) {
       var hB1 = document.getElementById('hoverBox1');
       var hB2 = document.getElementById('hoverBox2');
       // let hB3 = document.getElementById('hoverBox3');  
-      var hB4 = document.getElementById('hoverBox4');
+      // let hB4 = document.getElementById('hoverBox4');  
       var hB5 = document.getElementById('hoverBox5');
       // let hB6 = document.getElementById('hoverBox6'); 
       var p1 = document.getElementById('p1');
       var p2 = document.getElementById('p2');
       // let p3 = document.getElementById('p3');  
-      var p4 = document.getElementById('p4');
+      // let p4 = document.getElementById('p4');  
       var p5 = document.getElementById('p5');
       // let p6 = document.getElementById('p6'); 
       var d1 = document.getElementById('display1');
@@ -808,9 +799,7 @@ var Projects = function (_React$Component) {
         hB2.style.display = 'block';d2.setAttribute("class", "Animated flipInX");
       });
       // p3.addEventListener('mouseover', () =>{hB3.style.display = 'block'; d3.setAttribute("class", "Animated flipInX");});
-      p4.addEventListener('mouseover', function () {
-        hB4.style.display = 'block';d4.setAttribute("class", "Animated flipInX");
-      });
+      // p4.addEventListener('mouseover', () =>{hB4.style.display = 'block'; d4.setAttribute("class", "Animated flipInX");});
       p5.addEventListener('mouseover', function () {
         hB5.style.display = 'block';d5.setAttribute("class", "Animated flipInX");
       });
@@ -822,13 +811,13 @@ var Projects = function (_React$Component) {
       var hB1 = document.getElementById('hoverBox1');
       var hB2 = document.getElementById('hoverBox2');
       // let hB3 = document.getElementById('hoverBox3');  
-      var hB4 = document.getElementById('hoverBox4');
+      // let hB4 = document.getElementById('hoverBox4');  
       var hB5 = document.getElementById('hoverBox5');
       // let hB6 = document.getElementById('hoverBox6'); 
       var p1 = document.getElementById('p1');
       var p2 = document.getElementById('p2');
       // let p3 = document.getElementById('p3');  
-      var p4 = document.getElementById('p4');
+      // let p4 = document.getElementById('p4');  
       var p5 = document.getElementById('p5');
       // let p6 = document.getElementById('p6'); 
       p1.addEventListener('mouseleave', function () {
@@ -838,9 +827,7 @@ var Projects = function (_React$Component) {
         hB2.style.display = 'none';
       });
       // p3.addEventListener('mouseleave', () =>{hB3.style.display = 'none';});  
-      p4.addEventListener('mouseleave', function () {
-        hB4.style.display = 'none';
-      });
+      // p4.addEventListener('mouseleave', () =>{hB4.style.display = 'none';});  
       p5.addEventListener('mouseleave', function () {
         hB5.style.display = 'none';
       });
@@ -945,43 +932,6 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                'a',
-                { className: 'portfolio-item', id: 'p4', href: 'https://octaviusmoore.com/SkateKicks/', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'hoverBox', id: 'hoverBox4' },
-                  _react2.default.createElement(
-                    'h4',
-                    { id: 'display4' },
-                    'Display',
-                    _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
-                  )
-                ),
-                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/skatekicks-min.png', alt: 'images/skatekicks.png', height: '300px' }, 'alt', ''))
-              ),
-              _react2.default.createElement(
-                'span',
-                { className: 'caption' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'caption-content' },
-                  _react2.default.createElement(
-                    'h2',
-                    { className: 'pName mt-1' },
-                    'Skatekicks Website'
-                  ),
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'mb-0' },
-                    _react2.default.createElement('i', { className: 'devicon-wordpress-plain-wordmark colored pIcon' })
                   )
                 )
               )

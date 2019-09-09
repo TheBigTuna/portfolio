@@ -51,7 +51,7 @@ export default class Navbar extends React.Component{
         <div>
    <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navSec">
       <div className="container">
-        <img className="img-fluid rounded-circle mr-2" src="images/self-min.png" alt="images/self.png" id="navImg" width="30px" alt="" />
+        <img className="img-fluid selfImg mr-2" src="images/IMG_0978-min.jpg" alt="images/self.png" id="navImg" width="30px" alt="" />
         <p className="navbar-brand"id="navText1">Octavius</p>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto" >
@@ -76,10 +76,13 @@ export default class Navbar extends React.Component{
           contentLabel="Example Modal">
           
           <h2 className="mb-2">About Me</h2>
-          <p className="modalText">
-               Hello my name is Octavius Moore and, I'm a web developer based out of Detroit MI.<br />
-               As a self-taught developer I welcome you to browse through my portfolio and freelance projects.<br />
-               I'm always looking to collaborate and join a great team so please feel free to contact me.<br /></p>
+          <div className="modalText">
+              <p>
+                Hello my name is Octavius Moore and, I'm a web developer based out of Detroit MI.<br />
+                As a self-taught developer I welcome you to browse through my portfolio and freelance projects.<br />
+                I'm always looking to collaborate and join a great team so please feel free to contact me.<br />
+              </p>
+          </div>
           <h5>My Skills</h5>
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />
