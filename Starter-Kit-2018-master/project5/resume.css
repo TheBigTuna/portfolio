@@ -1,0 +1,237 @@
+body {
+  /*background: url('#') no-repeat center center fixed;*/
+  background-color: #001D40;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+}
+
+body {
+    font-size: 1vw;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+}
+
+.side-menu {
+    width: 19vw;
+    height: auto;
+    margin:6vw auto 0;
+    font-size: 1.7vw;
+    line-height: 4vw;
+    color: #fff;
+    font-weight:700;
+    text-transform:uppercase;
+    position:absolute;
+    top:0; 
+    bottom:0;
+    left: -14.5vw;
+    cursor: pointer;
+}
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li {
+    display:block;
+    background-color: #333;
+    height: 6vw;
+    padding: 1vw 1.5vw;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+    transition: transform .5s, background-color .5s, color .5s;
+}
+
+/*the colors of the different columns*/
+.side-menu ul li:nth-child(1) { background-color: #00aced;}
+.side-menu ul li:nth-child(2) { background-color: #3b5998;}
+.side-menu ul li:nth-child(3) { background-color: #00a300;}
+.side-menu ul li:nth-child(4) { background-color: #ffc40d;}
+.side-menu ul li:nth-child(5) { background-color: #cb2027;}
+.side-menu ul li:nth-child(6) { background-color: #402B27;}
+
+.side-menu ul li:hover {
+    background-color: #333; /*you can make different colors depending on the nth-child like above*/
+    -webkit-transform: translateX(14.5vw);
+    transform: translateX(14.5vw);/*equal to left in the .side-menu*/
+}
+.side-menu ul li a {
+    display:block;
+    color: #FFF;
+    text-decoration: none;
+}
+.side-menu ul li span {
+    display:block;
+    position: absolute;
+    font-size: 2vw;
+    line-height: 4vw;
+    height:2vw;
+    top:0; 
+    bottom:0;
+    margin:0 auto;
+    padding:1vw 1.5vw;
+    right: 0.1vw;
+    color: #F8F6FF;
+}
+
+
+h2{
+    color: #fff;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    font-size: 4.5vw;
+    border-bottom: 2px solid #fff;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    text-decoration: none;
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+.side-menu {
+    width: 20vh;
+    height: auto;
+    margin: 6vh auto 0;
+    font-size: 1.7vh;
+    line-height: 2vh;
+    color: #fff;
+    font-weight:700;
+    text-transform:uppercase;
+    position:absolute;
+    top: 12%; 
+    bottom:0;
+    left: -14.5vh;
+    cursor: pointer;
+    z-index: 6;
+}
+
+
+.side-menu ul li:hover {
+    background-color: #333; /*you can make different colors depending on the nth-child like above*/
+    -webkit-transform: translateX(14.5vh);
+    transform: translateX(14.5vh);/*equal to left in the .side-menu*/
+}
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li {
+    display:block;
+    background-color: #333;
+    height: 6vh;
+    padding: 5.5vh 5.5vh;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+    transition: transform .5s, background-color .5s, color .5s;
+}
+
+.side-menu ul li span {
+    display:block;
+    position: absolute;
+    font-size: 7vw;
+    line-height: 17vw;
+    height: 2vw;
+    top:0; 
+    bottom:0;
+    margin:0 auto;
+    padding:1vw 1.5vw;
+    right: 0.1vw;
+    color: #F8F6FF;
+}
+}
+
+.resumeBg{
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+    height: 550px;
+    z-index: -10000;
+    position: relative;
+    top: 50px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    overflow: hidden;
+}
+.resumeDownload{
+    position: relative;
+    left: 70em;
+    bottom: 3em;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: cornflowerblue;
+    font-style: arial;
+    font-size: 14px;
+}
+.resumeDownload:hover{
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+.resumeDownload a{
+    color: black;
+    text-decoration: none; 
+}
+.resume{
+  max-width: 700px; 
+  height: 500px;  
+  background: #fff;
+  margin: 0px auto 0px; 
+  box-shadow: 1px 1px 2px #DAD7D7;
+  border-radius: 3px;  
+  padding: 40px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+  .full-name {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+  
+  .first-name {
+    font-weight: 700;
+  }
+  
+  .last-name {
+    font-weight: 300;
+  }
+  
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  
+  .email , .phone {
+    color: #999;
+    font-weight: 300;
+    font-size: 14px;
+
+  } 
+  
+  .separator {
+    height: 10px;
+    display: inline-block;
+    border-left: 2px solid #999;
+    margin: 0px 10px;
+  }
+  
+  .resumeHeader {
+    color: cornflowerblue;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+
+.desc, .email-val, .phone-val{
+    font-size: 14px;
+}
+

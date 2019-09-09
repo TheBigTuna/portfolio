@@ -1,0 +1,290 @@
+body {
+  /*background: url('#') no-repeat center center fixed;*/
+  background-color: #001D40;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+}
+
+body {
+    font-size: 1vw;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+}
+.side-menu {
+    width: 19vw;
+    height: auto;
+    margin:6vw auto 0;
+    font-size: 1.7vw;
+    line-height: 4vw;
+    color: #fff;
+    font-weight:700;
+    text-transform:uppercase;
+    position:absolute;
+    top:0; 
+    bottom:0;
+    left: -14.5vw;
+    cursor: pointer;
+}
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li {
+    display:block;
+    background-color: #333;
+    height: 6vw;
+    padding: 1vw 1.5vw;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+    transition: transform .5s, background-color .5s, color .5s;
+}
+
+/*the colors of the different columns*/
+.side-menu ul li:nth-child(1) { background-color: #00aced;}
+.side-menu ul li:nth-child(2) { background-color: #3b5998;}
+.side-menu ul li:nth-child(3) { background-color: #00a300;}
+.side-menu ul li:nth-child(4) { background-color: #ffc40d;}
+.side-menu ul li:nth-child(5) { background-color: #cb2027;}
+.side-menu ul li:nth-child(6) { background-color: #402B27;}
+
+.side-menu ul li:hover {
+    background-color: #333; /*you can make different colors depending on the nth-child like above*/
+    -webkit-transform: translateX(14.5vw);
+    transform: translateX(14.5vw);/*equal to left in the .side-menu*/
+}
+.side-menu ul li a {
+    display:block;
+    color: #FFF;
+    text-decoration: none;
+}
+.side-menu ul li span {
+    display:block;
+    position: absolute;
+    font-size: 2vw;
+    line-height: 4vw;
+    height:2vw;
+    top:0; 
+    bottom:0;
+    margin:0 auto;
+    padding:1vw 1.5vw;
+    right: 0.1vw;
+    color: #F8F6FF;
+}
+
+img{
+    width: 20vw;
+    height: auto;
+    float: right;
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 20px;
+    /*-webkit-animation-duration: 1s;
+    animation-duration: 1s;*/
+}
+
+img:hover{
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    
+}
+
+img::selection{
+    background-color: #ffc40d;
+}
+
+.about-wrapper{
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    
+}
+
+h2{
+    color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    font-size: 3vw;
+    border-bottom: 2px solid #fff;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    z-index: -2;
+
+}
+
+h2::selection{
+    background-color: #ffc40d;
+}
+
+
+p{
+    font-size: 2vw;
+    color: white;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    width: 60%;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    z-index: -2;
+}
+
+p::selection{
+    background-color: #ffc40d;
+}
+
+.skills{
+    color: white;
+    position: absolute;
+    left: 15%;
+}
+
+.skills-list{
+    color: white;
+    position: absolute;
+    left: 16%;
+    top: 5%;
+    list-style-type: none;
+    display: inline-flex;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+
+}
+
+.skills-list i{
+    font-size: 6vw;
+    cursor: pointer;
+
+}
+
+.skills-list li{
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.skills-list li:hover{
+    -webkit-animation-duration: 2s;
+    animation-duration: 2
+}
+
+
+
+@media only screen and (max-width: 450px) {
+
+.side-menu {
+    width: 20vh;
+    height: auto;
+    margin: 6vh auto 0;
+    font-size: 1.7vh;
+    line-height: 2vh;
+    color: #fff;
+    font-weight:700;
+    text-transform:uppercase;
+    position:absolute;
+    top: 12%; 
+    bottom:0;
+    left: -14.5vh;
+    cursor: pointer;
+    z-index: 7;
+}
+
+
+.side-menu ul li:hover {
+    background-color: #333; /*you can make different colors depending on the nth-child like above*/
+    -webkit-transform: translateX(14.5vh);
+    transform: translateX(14.5vh);/*equal to left in the .side-menu*/
+}
+.side-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.side-menu ul li {
+    display:block;
+    background-color: #333;
+    height: 6vh;
+    padding: 5.5vh 5.5vh;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s,     background-color .5s, color .5s;
+    transition: transform .5s, background-color .5s, color .5s;
+}
+
+.side-menu ul li span {
+    display:block;
+    position: absolute;
+    font-size: 7vw;
+    line-height: 17vw;
+    height: 2vw;
+    top:0; 
+    bottom:0;
+    margin:0 auto;
+    padding:1vw 1.5vw;
+    right: 0.1vw;
+    color: #F8F6FF;
+}
+
+
+img{
+    width: 32vw;
+    height: auto;
+    float: right;
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 20px;
+    z-index: 1;
+    /*-webkit-animation-duration: 1s;
+    animation-duration: 1s;*/
+}
+
+
+.skills{
+    color: white;
+    position: absolute;
+    left: 15%;
+}
+
+.skills-list{
+    color: white;
+    position: absolute;
+    left: -9%;
+    top: 5%;
+    list-style-type: none;
+    display: inline-flex;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+
+}
+
+.skills-list i{
+    font-size: 8.1vw;
+    cursor: pointer;
+
+}
+
+h2{
+    color: #fff;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    font-size: 10vw;
+    border-bottom: 2px solid #fff;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    z-index: -2;
+
+}
+p{
+    font-size: 4.5vw;
+    color: white;
+    position: absolute;
+    left: 15%;
+    top: 39%;
+    width: 70%;
+    font-family: 'Roboto', Arial, Verdana, sans-serif;
+    z-index: -2;
+}
+}
