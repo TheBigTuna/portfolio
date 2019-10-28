@@ -778,19 +778,19 @@ var Projects = function (_React$Component) {
       // let hB3 = document.getElementById('hoverBox3');  
       // let hB4 = document.getElementById('hoverBox4');  
       var hB5 = document.getElementById('hoverBox5');
-      // let hB6 = document.getElementById('hoverBox6'); 
+      var hB6 = document.getElementById('hoverBox6');
       var p1 = document.getElementById('p1');
       var p2 = document.getElementById('p2');
       // let p3 = document.getElementById('p3');  
       // let p4 = document.getElementById('p4');  
       var p5 = document.getElementById('p5');
-      // let p6 = document.getElementById('p6'); 
+      var p6 = document.getElementById('p6');
       var d1 = document.getElementById('display1');
       var d2 = document.getElementById('display2');
       // let d3 = document.getElementById('display3');
       var d4 = document.getElementById('display4');
       var d5 = document.getElementById('display5');
-      // let d6 = document.getElementById('display6');
+      var d6 = document.getElementById('display6');
 
       p1.addEventListener('mouseover', function () {
         hB1.style.display = 'block';d1.setAttribute("class", "Animated flipInX");
@@ -803,7 +803,9 @@ var Projects = function (_React$Component) {
       p5.addEventListener('mouseover', function () {
         hB5.style.display = 'block';d5.setAttribute("class", "Animated flipInX");
       });
-      // p6.addEventListener('mouseover', () =>{hB6.style.display = 'block'; d6.setAttribute("class", "Animated flipInX");});
+      p6.addEventListener('mouseover', function () {
+        hB6.style.display = 'block';d6.setAttribute("class", "Animated flipInX");
+      });
     }
   }, {
     key: 'iconHide',
@@ -813,13 +815,13 @@ var Projects = function (_React$Component) {
       // let hB3 = document.getElementById('hoverBox3');  
       // let hB4 = document.getElementById('hoverBox4');  
       var hB5 = document.getElementById('hoverBox5');
-      // let hB6 = document.getElementById('hoverBox6'); 
+      var hB6 = document.getElementById('hoverBox6');
       var p1 = document.getElementById('p1');
       var p2 = document.getElementById('p2');
       // let p3 = document.getElementById('p3');  
       // let p4 = document.getElementById('p4');  
       var p5 = document.getElementById('p5');
-      // let p6 = document.getElementById('p6'); 
+      var p6 = document.getElementById('p6');
       p1.addEventListener('mouseleave', function () {
         hB1.style.display = 'none';
       });
@@ -831,7 +833,9 @@ var Projects = function (_React$Component) {
       p5.addEventListener('mouseleave', function () {
         hB5.style.display = 'none';
       });
-      // p6.addEventListener('mouseleave', () =>{hB6.style.display = 'none';}); 
+      p6.addEventListener('mouseleave', function () {
+        hB6.style.display = 'none';
+      });
     }
   }, {
     key: 'render',
@@ -931,6 +935,49 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-6' },
+              _react2.default.createElement(
+                'a',
+                { className: 'portfolio-item', id: 'p6', href: 'https://thebigtuna.github.io/DetDigitalAgency/', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'hoverBox', id: 'hoverBox6' },
+                  _react2.default.createElement(
+                    'h4',
+                    { id: 'display6' },
+                    'Display',
+                    _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
+                  )
+                ),
+                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/Det-min.png', alt: 'images/Det.png', height: '300px' }, 'alt', ''))
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'caption' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'caption-content' },
+                  _react2.default.createElement(
+                    'h2',
+                    { className: 'pName mt-1' },
+                    'Detroit Sightings Website'
+                  ),
+                  _react2.default.createElement(
+                    'p',
+                    { className: 'mb-0' },
+                    _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-php-plain colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-mysql-plain-wordmark pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
                   )
                 )

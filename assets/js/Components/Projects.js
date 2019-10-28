@@ -18,26 +18,26 @@ export default class Projects extends React.Component{
       // let hB3 = document.getElementById('hoverBox3');  
       // let hB4 = document.getElementById('hoverBox4');  
       let hB5 = document.getElementById('hoverBox5');  
-      // let hB6 = document.getElementById('hoverBox6'); 
+      let hB6 = document.getElementById('hoverBox6'); 
       let p1 = document.getElementById('p1');  
       let p2 = document.getElementById('p2');  
       // let p3 = document.getElementById('p3');  
       // let p4 = document.getElementById('p4');  
       let p5 = document.getElementById('p5');  
-      // let p6 = document.getElementById('p6'); 
+      let p6 = document.getElementById('p6'); 
       let d1 = document.getElementById('display1');
       let d2 = document.getElementById('display2');
       // let d3 = document.getElementById('display3');
       let d4 = document.getElementById('display4');
       let d5 = document.getElementById('display5');
-      // let d6 = document.getElementById('display6');
+      let d6 = document.getElementById('display6');
 
       p1.addEventListener('mouseover', () =>{hB1.style.display = 'block'; d1.setAttribute("class", "Animated flipInX");});
       p2.addEventListener('mouseover', () =>{hB2.style.display = 'block'; d2.setAttribute("class", "Animated flipInX");});
       // p3.addEventListener('mouseover', () =>{hB3.style.display = 'block'; d3.setAttribute("class", "Animated flipInX");});
       // p4.addEventListener('mouseover', () =>{hB4.style.display = 'block'; d4.setAttribute("class", "Animated flipInX");});
       p5.addEventListener('mouseover', () =>{hB5.style.display = 'block'; d5.setAttribute("class", "Animated flipInX");});
-      // p6.addEventListener('mouseover', () =>{hB6.style.display = 'block'; d6.setAttribute("class", "Animated flipInX");});
+      p6.addEventListener('mouseover', () =>{hB6.style.display = 'block'; d6.setAttribute("class", "Animated flipInX");});
 
     }
     iconHide() { 
@@ -46,19 +46,19 @@ export default class Projects extends React.Component{
       // let hB3 = document.getElementById('hoverBox3');  
       // let hB4 = document.getElementById('hoverBox4');  
       let hB5 = document.getElementById('hoverBox5');  
-      // let hB6 = document.getElementById('hoverBox6'); 
+      let hB6 = document.getElementById('hoverBox6'); 
       let p1 = document.getElementById('p1');  
       let p2 = document.getElementById('p2');  
       // let p3 = document.getElementById('p3');  
       // let p4 = document.getElementById('p4');  
       let p5 = document.getElementById('p5');  
-      // let p6 = document.getElementById('p6'); 
+      let p6 = document.getElementById('p6'); 
           p1.addEventListener('mouseleave', () =>{hB1.style.display = 'none';});  
           p2.addEventListener('mouseleave', () =>{hB2.style.display = 'none';});  
           // p3.addEventListener('mouseleave', () =>{hB3.style.display = 'none';});  
           // p4.addEventListener('mouseleave', () =>{hB4.style.display = 'none';});  
           p5.addEventListener('mouseleave', () =>{hB5.style.display = 'none';}); 
-          // p6.addEventListener('mouseleave', () =>{hB6.style.display = 'none';}); 
+          p6.addEventListener('mouseleave', () =>{hB6.style.display = 'none';}); 
     }
     
     render(){
@@ -111,7 +111,7 @@ export default class Projects extends React.Component{
                 </span>
               </span>
           </div>
-            {/* <div className="col-lg-6">
+             <div className="col-lg-6">
             <a className="portfolio-item" id="p6" href="https://thebigtuna.github.io/DetDigitalAgency/" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
             <div className= "hoverBox" id="hoverBox6">
                <h4 id="display6">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
@@ -133,7 +133,7 @@ export default class Projects extends React.Component{
                 </span>
               </span>
           </div>
-           */}
+           
           {/* <div className="col-lg-6">
             <a className="portfolio-item"  id="p3" href="http://sybeq.com/html/home.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
              <div className= "hoverBox" id="hoverBox3">
