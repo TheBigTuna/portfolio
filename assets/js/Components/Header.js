@@ -74,10 +74,10 @@ export default class Header extends React.Component{
           <p>(313)293-9440</p>
           <h6>Email</h6>
           <p>mooreoctavius94@gmail.com</p>
-          {/* <h6>Social</h6>
+          <h6>Social</h6>
            <a href ="https://www.linkedin.com/in/octavius-moore-6a84a7b0/"><i className="fa fa-linkedin social fa-lg"></i></a>
            <a href ="https://github.com/TheBigTuna"><i className="fa fa-github ml-3 social fa-lg"></i></a>
-           <a href ="https://www.freecodecamp.org/thebigtuna"><i className="fa fa-free-code-camp ml-3 social fa-lg"></i></a> */}
+           {/* <a href ="https://www.freecodecamp.org/thebigtuna"><i className="fa fa-free-code-camp ml-3 social fa-lg"></i></a> */}
         </Modal>
     </header>
         </div>

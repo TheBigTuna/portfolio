@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 160:
+/***/ 118:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -12,15 +12,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(22);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(28);
+var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactModal = __webpack_require__(157);
+var _reactModal = __webpack_require__(116);
 
 var _reactModal2 = _interopRequireDefault(_reactModal);
 
@@ -162,7 +162,7 @@ exports.default = ModalBox;
 
 /***/ }),
 
-/***/ 248:
+/***/ 181:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -174,11 +174,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(22);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(28);
+var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -222,7 +222,7 @@ exports.default = About;
 
 /***/ }),
 
-/***/ 249:
+/***/ 182:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -234,11 +234,11 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(22);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(28);
+var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
@@ -292,7 +292,7 @@ exports.default = Footer;
 
 /***/ }),
 
-/***/ 250:
+/***/ 183:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -304,15 +304,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(22);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(28);
+var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactModal = __webpack_require__(157);
+var _reactModal = __webpack_require__(116);
 
 var _reactModal2 = _interopRequireDefault(_reactModal);
 
@@ -442,6 +442,21 @@ var Header = function (_React$Component) {
               'p',
               null,
               'mooreoctavius94@gmail.com'
+            ),
+            _react2.default.createElement(
+              'h6',
+              null,
+              'Social'
+            ),
+            _react2.default.createElement(
+              'a',
+              { href: 'https://www.linkedin.com/in/octavius-moore-6a84a7b0/' },
+              _react2.default.createElement('i', { className: 'fa fa-linkedin social fa-lg' })
+            ),
+            _react2.default.createElement(
+              'a',
+              { href: 'https://github.com/TheBigTuna' },
+              _react2.default.createElement('i', { className: 'fa fa-github ml-3 social fa-lg' })
             )
           )
         )
@@ -456,7 +471,7 @@ exports.default = Header;
 
 /***/ }),
 
-/***/ 251:
+/***/ 184:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -468,15 +483,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(22);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(28);
+var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactLoading = __webpack_require__(161);
+var _reactLoading = __webpack_require__(119);
 
 var _reactLoading2 = _interopRequireDefault(_reactLoading);
 
@@ -524,7 +539,7 @@ exports.default = Load;
 
 /***/ }),
 
-/***/ 252:
+/***/ 185:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -536,19 +551,19 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(22);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(28);
+var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactModal = __webpack_require__(157);
+var _reactModal = __webpack_require__(116);
 
 var _reactModal2 = _interopRequireDefault(_reactModal);
 
-var _Modal = __webpack_require__(160);
+var _Modal = __webpack_require__(118);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
@@ -724,7 +739,7 @@ exports.default = Navbar;
 
 /***/ }),
 
-/***/ 253:
+/***/ 186:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -736,15 +751,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(22);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(28);
+var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactAnimatedCss = __webpack_require__(489);
+var _reactAnimatedCss = __webpack_require__(435);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -863,7 +878,7 @@ var Projects = function (_React$Component) {
               { className: 'col-lg-6' },
               _react2.default.createElement(
                 'a',
-                { className: 'portfolio-item', id: 'p1', href: 'https://octaviusmoore.com/project1/index.html', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
+                { className: 'portfolio-item', id: 'p1', href: 'https://animerooms.com', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
                 _react2.default.createElement(
                   'div',
                   { className: 'hoverBox', id: 'hoverBox1' },
@@ -874,7 +889,7 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
                   )
                 ),
-                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/polar-min.png', alt: 'images/polar.png', height: '300px' }, 'alt', ''))
+                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/animerooms.png', alt: 'images/animerooms.png', height: '300px' }, 'alt', ''))
               ),
               _react2.default.createElement(
                 'span',
@@ -885,15 +900,16 @@ var Projects = function (_React$Component) {
                   _react2.default.createElement(
                     'h2',
                     { className: 'pName mt-1' },
-                    'Polar Bay Website'
+                    'animerooms.com'
                   ),
                   _react2.default.createElement(
                     'p',
                     { className: 'mb-0' },
                     _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-php-plain colored pIcon' }),
+                    _react2.default.createElement('i', { className: 'devicon-mysql-plain-wordmark pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
                   )
                 )
@@ -935,49 +951,6 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-bootstrap-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-react-original-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                'a',
-                { className: 'portfolio-item', id: 'p6', href: 'https://thebigtuna.github.io/DetDigitalAgency/', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'hoverBox', id: 'hoverBox6' },
-                  _react2.default.createElement(
-                    'h4',
-                    { id: 'display6' },
-                    'Display',
-                    _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
-                  )
-                ),
-                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/Det-min.png', alt: 'images/Det.png', height: '300px' }, 'alt', ''))
-              ),
-              _react2.default.createElement(
-                'span',
-                { className: 'caption' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'caption-content' },
-                  _react2.default.createElement(
-                    'h2',
-                    { className: 'pName mt-1' },
-                    'Detroit Sightings Website'
-                  ),
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'mb-0' },
-                    _react2.default.createElement('i', { className: 'devicon-html5-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-css3-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-php-plain colored pIcon' }),
-                    _react2.default.createElement('i', { className: 'devicon-mysql-plain-wordmark pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
                   )
                 )
@@ -1039,7 +1012,7 @@ exports.default = Projects;
 
 /***/ }),
 
-/***/ 257:
+/***/ 190:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1047,43 +1020,43 @@ exports.default = Projects;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(22);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(28);
+var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _reactLoading = __webpack_require__(161);
+var _reactLoading = __webpack_require__(119);
 
 var _reactLoading2 = _interopRequireDefault(_reactLoading);
 
-var _Navbar = __webpack_require__(252);
+var _Navbar = __webpack_require__(185);
 
 var _Navbar2 = _interopRequireDefault(_Navbar);
 
-var _Header = __webpack_require__(250);
+var _Header = __webpack_require__(183);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _About = __webpack_require__(248);
+var _About = __webpack_require__(181);
 
 var _About2 = _interopRequireDefault(_About);
 
-var _Projects = __webpack_require__(253);
+var _Projects = __webpack_require__(186);
 
 var _Projects2 = _interopRequireDefault(_Projects);
 
-var _Footer = __webpack_require__(249);
+var _Footer = __webpack_require__(182);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _Modal = __webpack_require__(160);
+var _Modal = __webpack_require__(118);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _Loading = __webpack_require__(251);
+var _Loading = __webpack_require__(184);
 
 var _Loading2 = _interopRequireDefault(_Loading);
 
@@ -1214,4 +1187,4 @@ _reactDom2.default.render(_react2.default.createElement(Layout, null), app);
 
 /***/ })
 
-},[257]);
+},[190]);

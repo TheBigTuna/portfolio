@@ -53,12 +53,12 @@ export default class Projects extends React.Component{
       // let p4 = document.getElementById('p4');  
       let p5 = document.getElementById('p5');  
       let p6 = document.getElementById('p6'); 
-          p1.addEventListener('mouseleave', () =>{hB1.style.display = 'none';});  
-          p2.addEventListener('mouseleave', () =>{hB2.style.display = 'none';});  
-          // p3.addEventListener('mouseleave', () =>{hB3.style.display = 'none';});  
-          // p4.addEventListener('mouseleave', () =>{hB4.style.display = 'none';});  
-          p5.addEventListener('mouseleave', () =>{hB5.style.display = 'none';}); 
-          p6.addEventListener('mouseleave', () =>{hB6.style.display = 'none';}); 
+      p1.addEventListener('mouseleave', () =>{hB1.style.display = 'none';});  
+      p2.addEventListener('mouseleave', () =>{hB2.style.display = 'none';});  
+      // p3.addEventListener('mouseleave', () =>{hB3.style.display = 'none';});  
+      // p4.addEventListener('mouseleave', () =>{hB4.style.display = 'none';});  
+      p5.addEventListener('mouseleave', () =>{hB5.style.display = 'none';}); 
+      p6.addEventListener('mouseleave', () =>{hB6.style.display = 'none';}); 
     }
     
     render(){
@@ -70,6 +70,27 @@ export default class Projects extends React.Component{
         </div>
         <div className="row no-gutters">
         <div className="col-lg-6">
+            <a className="portfolio-item" id="p1" href="https://animerooms.com" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
+             <div className="hoverBox" id="hoverBox1">
+               <h4 id="display1">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
+             </div>
+             <img className="img-fluid projectImg" src="images/animerooms.png" alt="images/animerooms.png" height="300px" alt="" />
+            </a>
+            <span className="caption">
+                <span className="caption-content">
+                  <h2 className="pName mt-1">animerooms.com</h2>
+                  <p className="mb-0">
+                  <i className="devicon-html5-plain-wordmark colored pIcon" />
+                  <i className="devicon-css3-plain-wordmark colored pIcon" />
+                  <i className="devicon-javascript-plain colored pIcon" />
+                  <i className="devicon-php-plain colored pIcon"/>
+                  <i className="devicon-mysql-plain-wordmark pIcon" />
+                  <i className="devicon-git-plain-wordmark colored pIcon" />
+                  </p>
+                </span>
+              </span>
+          </div>
+        {/* <div className="col-lg-6">
             <a className="portfolio-item" id="p1" href="https://octaviusmoore.com/project1/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
              <div className="hoverBox" id="hoverBox1">
                <h4 id="display1">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
@@ -85,11 +106,11 @@ export default class Projects extends React.Component{
                   <i className="devicon-bootstrap-plain-wordmark colored pIcon" />
                   <i className="devicon-react-original-wordmark colored pIcon" />
                   <i className="devicon-git-plain-wordmark colored pIcon" />
-                  {/*<a href="https://github.com/TheBigTuna/restaurant-app" target="_blank"><button className="viewCode btn">View Code</button></a>*/}
+                  <a href="https://github.com/TheBigTuna/restaurant-app" target="_blank"><button className="viewCode btn">View Code</button></a>
                   </p>
                 </span>
               </span>
-          </div>
+          </div> */}
          <div className="col-lg-6">
             <a className="portfolio-item"  id="p2" href="https://octaviusmoore.com/project8/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
              <div className= "hoverBox" id="hoverBox2">
@@ -111,7 +132,7 @@ export default class Projects extends React.Component{
                 </span>
               </span>
           </div>
-             <div className="col-lg-6">
+             {/* <div className="col-lg-6">
             <a className="portfolio-item" id="p6" href="https://thebigtuna.github.io/DetDigitalAgency/" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
             <div className= "hoverBox" id="hoverBox6">
                <h4 id="display6">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
@@ -133,7 +154,7 @@ export default class Projects extends React.Component{
                 </span>
               </span>
           </div>
-           
+            */}
           {/* <div className="col-lg-6">
             <a className="portfolio-item"  id="p3" href="http://sybeq.com/html/home.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
              <div className= "hoverBox" id="hoverBox3">
