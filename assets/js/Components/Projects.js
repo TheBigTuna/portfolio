@@ -124,8 +124,8 @@ export default class Projects extends React.Component{
                   <p className="mb-0">
                   <i className="devicon-html5-plain-wordmark colored pIcon" />
                   <i className="devicon-css3-plain-wordmark colored pIcon" />
-                  <i className="devicon-bootstrap-plain-wordmark colored pIcon" />
-                  <i className="devicon-react-original-wordmark colored pIcon" />
+                  <i className="devicon-javascript-plain colored pIcon" />
+                  <i className="devicon-jquery-plain-wordmark colored pIcon" />
                   <i className="devicon-git-plain-wordmark colored pIcon" />
                   {/*<a href="https://github.com/TheBigTuna/T7-frame-data" target="_blank"><button className="viewCode btn">View Code</button></a>*/}
                   </p>
