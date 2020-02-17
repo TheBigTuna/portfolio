@@ -231,7 +231,7 @@ export default class Projects extends React.Component{
                   <i className="devicon-php-plain colored pIcon"/>
                   <i className="devicon-mysql-plain-wordmark pIcon" />
                   <i className="devicon-git-plain-wordmark colored pIcon" />
-                  <a href="https://github.com/TheBigTuna/youtubeplayer" target="_blank"><button className="viewCode btn">View Code</button></a>
+                  {/* <a href="https://github.com/TheBigTuna/youtubeplayer" target="_blank"><button className="viewCode btn">View Code</button></a> */}
                   </p>
                 </span>
               </span>
