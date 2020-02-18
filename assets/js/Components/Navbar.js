@@ -51,7 +51,7 @@ export default class Navbar extends React.Component{
         <div>
    <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" id="navSec">
       <div className="container">
-        <img className="img-fluid selfImg mr-2" src="images/IMG_0978-min.jpg" alt="images/self.png" id="navImg" width="30px" alt="" />
+        {/* <img className="img-fluid selfImg mr-2" src="images/IMG_0978-min.jpg" alt="images/self.png" id="navImg" width="30px" alt="" /> */}
         <p className="navbar-brand"id="navText1">Octavius</p>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto" >

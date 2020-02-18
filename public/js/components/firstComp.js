@@ -318,8 +318,6 @@ var _reactModal2 = _interopRequireDefault(_reactModal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -393,7 +391,6 @@ var Header = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'container text-left my-auto' },
-            _react2.default.createElement('img', _defineProperty({ className: 'img-fluid selfImg', src: 'images/IMG_0978-min.jpg', alt: 'images/self.png', width: '80px' }, 'alt', '')),
             _react2.default.createElement(
               'h2',
               { className: 'mb-1' },
@@ -569,8 +566,6 @@ var _Modal2 = _interopRequireDefault(_Modal);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -637,7 +632,6 @@ var Navbar = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'container' },
-            _react2.default.createElement('img', _defineProperty({ className: 'img-fluid selfImg mr-2', src: 'images/IMG_0978-min.jpg', alt: 'images/self.png', id: 'navImg', width: '30px' }, 'alt', '')),
             _react2.default.createElement(
               'p',
               { className: 'navbar-brand', id: 'navText1' },
@@ -791,13 +785,13 @@ var Projects = function (_React$Component) {
       var hB1 = document.getElementById('hoverBox1');
       // let hB2 = document.getElementById('hoverBox2');  
       // let hB3 = document.getElementById('hoverBox3');  
-      var hB4 = document.getElementById('hoverBox4');
+      // let hB4 = document.getElementById('hoverBox4');  
       var hB5 = document.getElementById('hoverBox5');
       var hB6 = document.getElementById('hoverBox6');
       var p1 = document.getElementById('p1');
       var p2 = document.getElementById('p2');
       // let p3 = document.getElementById('p3');  
-      var p4 = document.getElementById('p4');
+      // let p4 = document.getElementById('p4');  
       var p5 = document.getElementById('p5');
       var p6 = document.getElementById('p6');
       var d1 = document.getElementById('display1');
@@ -834,7 +828,7 @@ var Projects = function (_React$Component) {
       var p1 = document.getElementById('p1');
       // let p2 = document.getElementById('p2');  
       // let p3 = document.getElementById('p3');  
-      var p4 = document.getElementById('p4');
+      // let p4 = document.getElementById('p4');  
       var p5 = document.getElementById('p5');
       var p6 = document.getElementById('p6');
       p1.addEventListener('mouseleave', function () {
@@ -842,9 +836,7 @@ var Projects = function (_React$Component) {
       });
       // p2.addEventListener('mouseleave', () =>{hB2.style.display = 'none';});  
       // p3.addEventListener('mouseleave', () =>{hB3.style.display = 'none';});  
-      p4.addEventListener('mouseleave', function () {
-        hB4.style.display = 'none';
-      });
+      // p4.addEventListener('mouseleave', () =>{hB4.style.display = 'none';});  
       p5.addEventListener('mouseleave', function () {
         hB5.style.display = 'none';
       });
@@ -952,43 +944,6 @@ var Projects = function (_React$Component) {
                     _react2.default.createElement('i', { className: 'devicon-javascript-plain colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-jquery-plain-wordmark colored pIcon' }),
                     _react2.default.createElement('i', { className: 'devicon-git-plain-wordmark colored pIcon' })
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                'a',
-                { className: 'portfolio-item', id: 'p4', href: 'https://octaviusmoore.com/SkateKicks/', target: '_blank', onMouseEnter: this.iconDisplay, onMouseLeave: this.iconHide },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'hoverBox', id: 'hoverBox4' },
-                  _react2.default.createElement(
-                    'h4',
-                    { id: 'display4' },
-                    'Display',
-                    _react2.default.createElement('i', { className: 'fa fa-arrow-right', 'aria-hidden': 'true' })
-                  )
-                ),
-                _react2.default.createElement('img', _defineProperty({ className: 'img-fluid projectImg', src: 'images/skatekicks-min.png', alt: 'images/skatekicks.png', height: '300px' }, 'alt', ''))
-              ),
-              _react2.default.createElement(
-                'span',
-                { className: 'caption' },
-                _react2.default.createElement(
-                  'span',
-                  { className: 'caption-content' },
-                  _react2.default.createElement(
-                    'h2',
-                    { className: 'pName mt-1' },
-                    'Skatekicks Website'
-                  ),
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'mb-0' },
-                    _react2.default.createElement('i', { className: 'devicon-wordpress-plain-wordmark colored pIcon' })
                   )
                 )
               )

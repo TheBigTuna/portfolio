@@ -54,7 +54,7 @@ export default class Header extends React.Component{
         <div id="headSec">
         <header className="masthead d-flex">
       <div className="container text-left my-auto">
-      <img className="img-fluid selfImg" src="images/IMG_0978-min.jpg" alt="images/self.png" width="80px" alt="" />
+      {/* <img className="img-fluid selfImg" src="images/IMG_0978-min.jpg" alt="images/self.png" width="80px" alt="" /> */}
         <h2 className="mb-1">Hello I'm Octavius</h2>
         <h1 className="mb-3">A Web Developer</h1>
         {/* Opens contact modal */}
