@@ -35,7 +35,7 @@ export default class Projects extends React.Component{
       p1.addEventListener('mouseover', () =>{hB1.style.display = 'block'; d1.setAttribute("class", "Animated flipInX");});
       // p2.addEventListener('mouseover', () =>{hB2.style.display = 'block'; d2.setAttribute("class", "Animated flipInX");});
       // p3.addEventListener('mouseover', () =>{hB3.style.display = 'block'; d3.setAttribute("class", "Animated flipInX");});
-      p4.addEventListener('mouseover', () =>{hB4.style.display = 'block'; d4.setAttribute("class", "Animated flipInX");});
+      // p4.addEventListener('mouseover', () =>{hB4.style.display = 'block'; d4.setAttribute("class", "Animated flipInX");});
       p5.addEventListener('mouseover', () =>{hB5.style.display = 'block'; d5.setAttribute("class", "Animated flipInX");});
       p6.addEventListener('mouseover', () =>{hB6.style.display = 'block'; d6.setAttribute("class", "Animated flipInX");});
 
@@ -44,7 +44,7 @@ export default class Projects extends React.Component{
       let hB1 = document.getElementById('hoverBox1');  
       // let hB2 = document.getElementById('hoverBox2');  
       // let hB3 = document.getElementById('hoverBox3');  
-      let hB4 = document.getElementById('hoverBox4');  
+      // let hB4 = document.getElementById('hoverBox4');  
       let hB5 = document.getElementById('hoverBox5');  
       let hB6 = document.getElementById('hoverBox6'); 
       let p1 = document.getElementById('p1');  
