@@ -13,13 +13,13 @@ export default class Projects extends React.Component{
     }
 
     iconDisplay() { 
-      let hB1 = document.getElementById('hoverBox1');  
+      // let hB1 = document.getElementById('hoverBox1');  
       // let hB2 = document.getElementById('hoverBox2');  
       // let hB3 = document.getElementById('hoverBox3');  
       // let hB4 = document.getElementById('hoverBox4');  
       let hB5 = document.getElementById('hoverBox5');  
       let hB6 = document.getElementById('hoverBox6'); 
-      let p1 = document.getElementById('p1');  
+      // let p1 = document.getElementById('p1');  
       let p2 = document.getElementById('p2');  
       // let p3 = document.getElementById('p3');  
       // let p4 = document.getElementById('p4');  
@@ -28,11 +28,11 @@ export default class Projects extends React.Component{
       let d1 = document.getElementById('display1');
       // let d2 = document.getElementById('display2');
       // let d3 = document.getElementById('display3');
-      let d4 = document.getElementById('display4');
+      // let d4 = document.getElementById('display4');
       let d5 = document.getElementById('display5');
       let d6 = document.getElementById('display6');
 
-      p1.addEventListener('mouseover', () =>{hB1.style.display = 'block'; d1.setAttribute("class", "Animated flipInX");});
+      // p1.addEventListener('mouseover', () =>{hB1.style.display = 'block'; d1.setAttribute("class", "Animated flipInX");});
       // p2.addEventListener('mouseover', () =>{hB2.style.display = 'block'; d2.setAttribute("class", "Animated flipInX");});
       // p3.addEventListener('mouseover', () =>{hB3.style.display = 'block'; d3.setAttribute("class", "Animated flipInX");});
       // p4.addEventListener('mouseover', () =>{hB4.style.display = 'block'; d4.setAttribute("class", "Animated flipInX");});
@@ -41,7 +41,7 @@ export default class Projects extends React.Component{
 
     }
     iconHide() { 
-      let hB1 = document.getElementById('hoverBox1');  
+      // let hB1 = document.getElementById('hoverBox1');  
       // let hB2 = document.getElementById('hoverBox2');  
       // let hB3 = document.getElementById('hoverBox3');  
       // let hB4 = document.getElementById('hoverBox4');  
@@ -53,7 +53,7 @@ export default class Projects extends React.Component{
       // let p4 = document.getElementById('p4');  
       let p5 = document.getElementById('p5');  
       let p6 = document.getElementById('p6'); 
-      p1.addEventListener('mouseleave', () =>{hB1.style.display = 'none';});  
+      // p1.addEventListener('mouseleave', () =>{hB1.style.display = 'none';});  
       // p2.addEventListener('mouseleave', () =>{hB2.style.display = 'none';});  
       // p3.addEventListener('mouseleave', () =>{hB3.style.display = 'none';});  
       // p4.addEventListener('mouseleave', () =>{hB4.style.display = 'none';});  
@@ -69,7 +69,7 @@ export default class Projects extends React.Component{
           <h2 className="mb-5 mt-3" id="projectsSec">PROJECTS</h2>    
         </div>
         <div className="row no-gutters">
-        <div className="col-lg-6">
+        {/* <div className="col-lg-6">
             <a className="portfolio-item" id="p1" href="https://animerooms.com" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
              <div className="hoverBox" id="hoverBox1">
                <h4 id="display1">Display<i className="fa fa-arrow-right" aria-hidden="true"></i></h4>
@@ -89,7 +89,7 @@ export default class Projects extends React.Component{
                   </p>
                 </span>
               </span>
-          </div>
+          </div> */}
         {/* <div className="col-lg-6">
             <a className="portfolio-item" id="p1" href="https://octaviusmoore.com/project1/index.html" target="_blank" onMouseEnter={this.iconDisplay}  onMouseLeave={this.iconHide}>
              <div className="hoverBox" id="hoverBox1">

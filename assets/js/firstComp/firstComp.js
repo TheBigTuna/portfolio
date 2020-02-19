@@ -27,7 +27,7 @@ class Layout extends Component {
     let navSec = document.getElementById('navSec');
     let navText1 = document.getElementById('navText1');
     let pos = pageYOffset;
-    let navImg = document.getElementById('navImg');
+    // let navImg = document.getElementById('navImg');
     let navList1 = document.getElementById('navList1');
     let navList2 = document.getElementById('navList2');
     let navList3 = document.getElementById('navList3');
@@ -35,7 +35,7 @@ class Layout extends Component {
      if(pos < 220){
       navSec.style.backgroundColor="#0575e6";
       navSec.style.borderBottom = "none";
-      navImg.style.display="none";
+      // navImg.style.display="none";
       navText1.style.color="white";
       navList1.style.color="white";
       navList2.style.color="white";
@@ -46,7 +46,7 @@ class Layout extends Component {
      else{
       navSec.style.backgroundColor="white";
       navSec.style.borderBottom = ".5px solid rgba(0,0,0,0.6)";
-      navImg.style.display="block";
+      // navImg.style.display="block";
       navText1.style.color="black";
       navList1.style.color="black";
       navList2.style.color="black";
